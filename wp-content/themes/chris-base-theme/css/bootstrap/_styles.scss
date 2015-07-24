@@ -1,0 +1,35 @@
+//--------------
+//Style Sheet
+//--------------
+
+//--------------
+// Header Styles
+//--------------
+.main-logo {
+	img {
+		position: relative;
+		margin: 0 0 10px;
+		width: 100%;
+		height: auto;
+		float: left;
+	}
+}
+
+
+//------------
+// Positions
+//------------
+.center {
+	text-align: center;
+}
+
+
+
+//------------
+// Body
+//------------
+.main-bg {
+	background-image: url("../i/bg.jpg");
+	background-size: 100% auto;
+	background-repeat: none;
+}

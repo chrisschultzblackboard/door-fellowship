@@ -1,4 +1,7 @@
 <?php 
+
+// This theme uses wp_nav_menu() in two locations.	
+add_theme_support('menus');
 // Enable thumbnails
 add_theme_support( 'post-thumbnails' );
 set_post_thumbnail_size(200, 200, true); // Normal post thumbnails
@@ -112,5 +115,98 @@ add_filter( 'login_errors', 'wpfme_login_obscure' );
 
 // Disable the theme / plugin text editor in Admin
 define('DISALLOW_FILE_EDIT', true);
+
+// Menus
+	register_nav_menus( array(
+		'Main Menu' => __('Primary Menu'),
+		'Footer Menu'  => __('Footer Menu'),
+	) );
+
+
+function twentyfifteen_widgets_init() {
+	register_sidebar( array(
+		'name'          => __( 'Widget Area', 'twentyfifteen' ),
+		'id'            => 'sidebar-1',
+		'description'   => __( 'Add widgets here to appear in your sidebar.', 'twentyfifteen' ),
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	) );
+}
+add_action( 'widgets_init', 'twentyfifteen_widgets_init' );
+
+
+function create_post_type() {
+	
+	register_post_type( 'gallery',
+		array(
+			'labels' => array(
+				'name' => __( 'Gallery' ),
+				'singular_name' => __( 'Gallery' )
+			),
+			'public' => true,
+			'menu_icon' => 'dashicons-format-gallery',
+			'has_archive' => true,
+			'map_meta_cap' => true,
+			'hierarchical' => true,
+			'supports' => array(
+				'title',
+				'editor',
+				'thumbnail',
+				'page-attributes',
+				'custom-fields'
+				),
+			'rewrite' => array('slug' => 'gallery')
+		)
+	);
+	
+	register_post_type( 'testimonials',
+		array(
+			'labels' => array(
+				'name' => __( 'Testimonials' ),
+				'singular_name' => __( 'Testimonial' )
+			),
+			'public' => true,
+			'menu_icon' => 'dashicons-editor-quote',
+			'has_archive' => true,
+			'map_meta_cap' => true,
+			'hierarchical' => true,
+			'supports' => array(
+				'title',
+				'editor',
+				'excerpt',
+				'thumbnail',
+				'custom-fields',
+				'page-attributes'
+				),
+			'rewrite' => array('slug' => 'testimonial')
+		)
+	);
+	
+	register_post_type( 'homepage-slider',
+		array(
+			'labels' => array(
+				'name' => __( 'Homepage Slider' ),
+				'singular_name' => __( 'Homepage Slider' )
+			),
+			'menu_icon' => 'dashicons-slides',
+			'public' => true,
+			'has_archive' => true,
+			'map_meta_cap' => true,
+			'hierarchical' => true,
+			'supports' => array(
+				'title',
+				'editor',
+				'excerpt',
+				'thumbnail',
+				'custom-fields',
+				'page-attributes'
+				),
+			'rewrite' => array('slug' => 'homepage-slider')
+		)
+	);
+
+}
 
 ?>

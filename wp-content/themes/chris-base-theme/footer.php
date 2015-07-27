@@ -6,7 +6,7 @@
  */
 ?>
 <div class="container">
-	<div class="container-box">
+	<div class="container-box footer">
 		<div class="row">
 			<footer id="footer" class="site-footer" role="contentinfo">
 			<div id="search" class="col-xs-12 col-sm-12 col-md-4 col-lg-4">

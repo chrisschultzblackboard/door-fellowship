@@ -17,7 +17,21 @@
 
 	<!--Style Sheet-->
 	<link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_directory'); ?>/css/bootstrap.css">
+
+	<!--JavaScript-->
+	<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/slider.js"></script>
+	<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/functions.js"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
 	<?php wp_head(); ?>
+	<!--[if lt IE 9]>
+	<link rel="stylesheet" href="/css/ie.css">
+	<![endif]-->
+
+	<!--IE Fix for HTML5 Tags-->
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
 </head>
 
 <body <?php body_class(); ?>>
@@ -55,12 +69,23 @@
 	                        'fallback_cb'    => '__return_false')
 	                        );
 	                    ?>
-	            <div class="social-links login-hide pull-left margin-right">
-
-	            </div><!--Close social-links-->
 	            </div><!--Close chris-navbar-->
 	          </nav><!--Close navigation-->
 	</div><!--Close navbar-->
-	</div><!--Close container-box-->
+<?php if(is_front_page()) { ?>
+	<div class="row">
+		<div class="col-xs-12">
+			<div class="wrapper" onload="startSlider();">
+				<div class="slider">	
+					<img id="1" src="<?php bloginfo('template_url'); ?>/img/the-door.jpg">
+					<img id="2" src="<?php bloginfo('template_url'); ?>/img/slide2.jpg">
+				</div><!--Close slider-->
+				<a href="#" class="prev" onclick="return false; prev();" ><img src="<?php bloginfo('template_url'); ?>/svg/prev.svg"/></a>
+				<a href="#" class="next" onclick="return false; next();" ><img src="<?php bloginfo('template_url'); ?>/svg/next.svg"/></a>
+			</div><!--Close wrapper-->
+		</div><!--Close col-xs-12-->
+	</div><!--Close row-->
+<?php } ; ?>
+</div><!--Close container-box-->
 </div><!--Close container-->
 </header><!--Close Banner-->

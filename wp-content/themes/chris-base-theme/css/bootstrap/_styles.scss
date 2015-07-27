@@ -9,7 +9,7 @@
 	img {
 		position: relative;
 		margin: 0 0 10px;
-		width: 100%;
+		width: 300px;
 		height: auto;
 		float: left;
 	}
@@ -26,10 +26,68 @@
 
 
 //------------
-// Body
+// Body Styles
 //------------
 .main-bg {
 	background-image: url("../i/bg.jpg");
 	background-size: 100% auto;
 	background-repeat: none;
+}
+.callout{
+	margin: 25px auto 0;
+	box-shadow: $box-shadow;
+	height: auto;
+	width: 100%;
+}
+.clear-container{
+	text-align: center;
+	h2{
+		padding: 15px 10px;
+		text-align: right;
+		font-weight: 100;
+		font-family: helvetica;
+		color: #fff;
+	}
+}
+
+
+//---------------
+// Callout Styles
+//---------------
+
+.messages {
+	background: #2B3F53;
+}
+.devotions {
+	background: #722929;
+}
+.events {
+	background: #366236;
+}
+
+//--------------
+// Footer Styles
+//--------------
+
+.footer {
+	margin-bottom: 25px;
+}
+
+#searchsubmit {
+    height: 40px;
+    width: auto;
+    border-radius: 5px;
+    border: 1px solid #177AD6;
+    background-color: #1259A6;
+    color: #fff;
+	box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+	:hover{
+		box-shadow: 2px 2px 5px rgba(0,0,0,0.0);
+		color: #000;
+	}
+}
+#s {
+	border-radius: 5px;
+	border: 1px solid #ddd;
+	box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
 }

@@ -24,7 +24,7 @@
 //Container boxes
 .container-box {
   border: 0px solid rgba(100,100,100,0.8);
-  box-shadow: 2px 2px 10px rgba(0,0,0, 0.8);
+  box-shadow: $box-shadow;
   margin-top: 25px;
   padding: 10px 15px;
   background: #fff;

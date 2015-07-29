@@ -19,7 +19,6 @@
 	<link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_directory'); ?>/css/bootstrap.css">
 
 	<!--JavaScript-->
-	<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/slider.js"></script>
 	<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/functions.js"></script>
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
@@ -34,12 +33,12 @@
 	<![endif]-->
 </head>
 
-<body <?php body_class(); ?>>
+<body <?php body_class(); ?> onload="startSlider();">
 <div id="top" class="hfeed site">
 <header role="banner">
 <div class="container">
 	<div class="container-box">
-		<div class="row">
+		<div class="row underline">
 			<div id="logo" class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
 				<a class="main-logo" href="<?php echo get_option('home'); ?>" alt="<?php the_title(); ?>">
 					<img src="<?php bloginfo('template_url'); ?>/img/logo.png">
@@ -79,9 +78,10 @@
 				<div class="slider">	
 					<img id="1" src="<?php bloginfo('template_url'); ?>/img/the-door.jpg">
 					<img id="2" src="<?php bloginfo('template_url'); ?>/img/slide2.jpg">
+					<img id="3" src="<?php bloginfo('template_url'); ?>/img/slide3.jpg">
 				</div><!--Close slider-->
-				<a href="#" class="prev" onclick="return false; prev();" ><img src="<?php bloginfo('template_url'); ?>/svg/prev.svg"/></a>
-				<a href="#" class="next" onclick="return false; next();" ><img src="<?php bloginfo('template_url'); ?>/svg/next.svg"/></a>
+				<a href="#" class="prev" onclick="return false;" ><img src="<?php bloginfo('template_url'); ?>/svg/prev.svg"/></a>
+				<a href="#" class="next" onclick="return false;" ><img src="<?php bloginfo('template_url'); ?>/svg/next.svg"/></a>
 			</div><!--Close wrapper-->
 		</div><!--Close col-xs-12-->
 	</div><!--Close row-->

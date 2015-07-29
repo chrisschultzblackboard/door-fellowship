@@ -159,4 +159,54 @@
 		}
 	} );
 
-} )( jQuery );
+} )
+
+function startSlider() {
+	alert("Slider Ready!");
+  $(".slider #1").show("fade", 500);
+  $(".slider #1").delay(5500).hide("slide", {direction:'left'}, 500);
+  var sliderInt = 1;
+  var sliderNext = 2;
+  var count = $(".slider img").size();
+
+  setInterval(function(){
+    $(".slider #"+sliderNext).show("slide", {direction:'right'}, 500);
+    $(".slider #"+sliderNext).delay(5500).hide("slide", {direction:'left'}, 500);
+
+    if(sliderNext == count){
+      sliderNext = 1;
+    }else{
+      sliderNext = sliderNext + 1;
+    }
+
+	
+
+  },6500);
+
+  $(".prev").click(function(){
+  	alert("Clicked Previous");
+	  sliderNext = sliderNext - 1;
+	  if(sliderNext > count){
+	    sliderNext = 1;
+	  }else if(sliderNext < 1){
+	    sliderNext = count;
+	  }
+	});
+	function next(){
+	  newSlide = sliderInt +1;
+	  showSlide(newSlide);
+	}
+
+	function showSlide(id){
+	  if(id > count){
+	    id = 1;
+	  }else if(id < 1){
+	    id = count;
+	  }
+
+    $(".slider #"+sliderNext).show("slide", {direction:'right'}, 500);
+    $(".slider #"+sliderNext).hide("slide", {direction:'left'}, 500);
+    sliderInt = sliderNext;
+    sliderNext = sliderNext + 1;
+	}
+}

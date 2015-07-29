@@ -37,16 +37,19 @@ get_header(); ?>
 		<div class="row center">
 			<div id="messages" class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
 				<div class="callout messages">
+					<img src="<?php bloginfo('template_url'); ?>/img/messages.jpg"/>
 					<h2>Messages</h2>
 				</div><!--Close callout-->
 			</div><!--Close Messages-->
 			<div id="devotions" class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
 				<div class="callout devotions">
+					<img src="<?php bloginfo('template_url'); ?>/img/BIBLE.jpg"/>
 					<h2>Devotions</h2>
 				</div><!--Close callout-->
 			</div><!--Close Devotions-->
 			<div id="events" class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
 				<div class="callout events">
+					<img src="<?php bloginfo('template_url'); ?>/img/calendar.jpg"/>
 					<h2>Events</h2>
 				</div><!--Close callout-->
 			</div><!--Close Events-->

@@ -15,6 +15,10 @@
 	}
 }
 
+.underline {
+	border-bottom: 1px solid #000;
+}
+
 
 //------------
 // Positions
@@ -38,6 +42,12 @@
 	box-shadow: $box-shadow;
 	height: auto;
 	width: 100%;
+	text-shadow: $box-shadow;
+	img {
+		width: 100%;
+		height: auto;
+		overflow-x: hidden;
+	}
 }
 .clear-container{
 	text-align: center;
@@ -47,6 +57,7 @@
 		font-weight: 100;
 		font-family: helvetica;
 		color: #fff;
+		margin-top: 0px;
 	}
 }
 
@@ -77,8 +88,7 @@
     height: 40px;
     width: auto;
     border-radius: 5px;
-    border: 1px solid #177AD6;
-    background-color: #1259A6;
+    background-color: #2B3F53;
     color: #fff;
 	box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
 	:hover{

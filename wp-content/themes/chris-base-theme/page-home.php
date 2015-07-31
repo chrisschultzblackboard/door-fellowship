@@ -23,6 +23,7 @@ get_header(); ?>
 								<?php the_content(); ?>
 							</section><!--Close Section-->
 						</article><!--Close Article-->
+					</div><!--Close content-->
 				</div><!--Close col-xs-12-->
 			<?php endwhile; else : ?><!--End while loop, continues if statement-->
 				Sorry there may be a problem.
@@ -31,7 +32,6 @@ get_header(); ?>
 			<?php wp_reset_query(); ?><!--Reset Chcek On Query-->
 			</div><!--Close row-->
 		</div><!--Close container-box-->
-
 	</div><!--Close container-->
 	<div class="clear-container">
 		<div class="row center">

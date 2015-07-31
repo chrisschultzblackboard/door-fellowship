@@ -33,7 +33,7 @@
 	<![endif]-->
 </head>
 
-<body <?php body_class(); ?> onload="startSlider();">
+<body <?php body_class(); ?>>
 <div id="top" class="hfeed site">
 <header role="banner">
 <div class="container">
@@ -74,7 +74,7 @@
 <?php if(is_front_page()) { ?>
 	<div class="row">
 		<div class="col-xs-12">
-			<div class="wrapper" onload="startSlider();">
+			<div class="wrapper">
 				<div class="slider">	
 					<img id="1" src="<?php bloginfo('template_url'); ?>/img/the-door.jpg">
 					<img id="2" src="<?php bloginfo('template_url'); ?>/img/slide2.jpg">
@@ -82,6 +82,8 @@
 				</div><!--Close slider-->
 				<a href="#" class="prev" onclick="return false;" ><img src="<?php bloginfo('template_url'); ?>/svg/prev.svg"/></a>
 				<a href="#" class="next" onclick="return false;" ><img src="<?php bloginfo('template_url'); ?>/svg/next.svg"/></a>
+				<div class="slidernav">
+				</div><!--Close slidernav-->
 			</div><!--Close wrapper-->
 		</div><!--Close col-xs-12-->
 	</div><!--Close row-->

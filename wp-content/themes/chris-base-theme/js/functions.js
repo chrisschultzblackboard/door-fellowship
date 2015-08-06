@@ -218,8 +218,8 @@ function cjsSlider(){
 	alert("So it Begins");
 
 	function animateSlider(){
-		$("slider #"+shown).hide("slide",{direction:'left'},500); //slide out
-		$("slider #"+nextSlide).show("slide",{direction:'right'},500);//slide in
+		$("slider #"+shown).hide("fade",500); //slide out
+		$("slider #"+nextSlide).show("fade",500);//slide in
 		shown = nextSlide;
 	}
  

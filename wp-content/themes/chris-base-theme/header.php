@@ -33,7 +33,7 @@
 	<![endif]-->
 </head>
 
-<body <?php body_class(); ?>>
+<body class="main-bg">
 <div id="top" class="hfeed site">
 <header role="banner">
 <div class="container">
@@ -75,13 +75,18 @@
 	<div class="row">
 		<div class="col-xs-12">
 			<div class="wrapper">
-				<div class="slider">	
-					<img id="1" src="<?php bloginfo('template_url'); ?>/img/the-door.jpg">
-					<img id="2" src="<?php bloginfo('template_url'); ?>/img/slide2.jpg">
-					<img id="3" src="<?php bloginfo('template_url'); ?>/img/slide3.jpg">
+				<div class="slider">
+				<?php $i = 1; ?>
+				<?php $args = array('post_type'=>'slider', 'order'=>'ASC', 'orderby'=>'menu_order', 'posts_per_page'=> -1);
+				 $query = new WP_Query($args); ?>
+				<?php if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>
+					<?php if(has_post_thumbnail()){ the_post_thumbnail('full', array('class' => 'slider-img', 'id' => $i) ); }?>
+				<?php $i++; ?>
+			<?php endwhile; else : ?>
+				<p>Something is Missing, Try again.</p>
+			<?php endif; ?>
+			<?php wp_reset_postdata(); ?>
 				</div><!--Close slider-->
-				<a href="#" class="prev" onclick="return false;" ><img src="<?php bloginfo('template_url'); ?>/svg/prev.svg"/></a>
-				<a href="#" class="next" onclick="return false;" ><img src="<?php bloginfo('template_url'); ?>/svg/next.svg"/></a>
 				<div class="slidernav">
 				</div><!--Close slidernav-->
 			</div><!--Close wrapper-->

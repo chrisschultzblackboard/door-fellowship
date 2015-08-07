@@ -4011,27 +4011,16 @@ input[type="button"].btn-block {
 
 /* line 35, bootstrap/_styles.scss */
 .main-bg {
-  background-image: url("../i/bg.jpg");
+  background: #0A2D4D url("../img/bg.jpg");
   background-size: 100% auto;
-  background-repeat: none; }
+  background-repeat: none;
+  background-position: left top;
+  background-attachment: fixed; }
 
-/* line 40, bootstrap/_styles.scss */
-.callout {
-  margin: 25px auto 0;
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
-  height: auto;
-  width: 100%;
-  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8); }
-  /* line 46, bootstrap/_styles.scss */
-  .callout img {
-    width: 100%;
-    height: auto;
-    overflow-x: hidden; }
-
-/* line 52, bootstrap/_styles.scss */
+/* line 42, bootstrap/_styles.scss */
 .clear-container {
   text-align: center; }
-  /* line 54, bootstrap/_styles.scss */
+  /* line 44, bootstrap/_styles.scss */
   .clear-container h2 {
     padding: 15px 10px;
     text-align: right;
@@ -4040,23 +4029,52 @@ input[type="button"].btn-block {
     color: #fff;
     margin-top: 0px; }
 
-/* line 69, bootstrap/_styles.scss */
+/* line 58, bootstrap/_styles.scss */
+.message-content {
+  text-align: center; }
+
+/* line 62, bootstrap/_styles.scss */
+.the-date {
+  color: #333;
+  font-size: 24px; }
+
+/* line 75, bootstrap/_styles.scss */
+#messages a h2 :hover {
+  text-decoration: none; }
+
+/* line 82, bootstrap/_styles.scss */
+.callout {
+  margin: 25px auto 0;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
+  height: auto;
+  width: 100%;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8); }
+  /* line 88, bootstrap/_styles.scss */
+  .callout img {
+    width: 100%;
+    height: auto;
+    overflow-x: hidden; }
+  /* line 94, bootstrap/_styles.scss */
+  .callout h2 :hover {
+    text-decoration: none; }
+
+/* line 99, bootstrap/_styles.scss */
 .messages {
   background: #2B3F53; }
 
-/* line 72, bootstrap/_styles.scss */
+/* line 102, bootstrap/_styles.scss */
 .devotions {
   background: #722929; }
 
-/* line 75, bootstrap/_styles.scss */
+/* line 105, bootstrap/_styles.scss */
 .events {
   background: #366236; }
 
-/* line 83, bootstrap/_styles.scss */
+/* line 113, bootstrap/_styles.scss */
 .footer {
   margin-bottom: 25px; }
 
-/* line 87, bootstrap/_styles.scss */
+/* line 117, bootstrap/_styles.scss */
 #searchsubmit {
   height: 40px;
   width: auto;
@@ -4064,12 +4082,12 @@ input[type="button"].btn-block {
   background-color: #2B3F53;
   color: #fff;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); }
-  /* line 94, bootstrap/_styles.scss */
+  /* line 124, bootstrap/_styles.scss */
   #searchsubmit :hover {
     box-shadow: 2px 2px 5px transparent;
     color: #000; }
 
-/* line 99, bootstrap/_styles.scss */
+/* line 129, bootstrap/_styles.scss */
 #s {
   border-radius: 5px;
   border: 1px solid #ddd;

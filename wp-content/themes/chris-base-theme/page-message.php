@@ -28,8 +28,26 @@ get_header(); ?>
 				Sorry there may be a problem.
 				<?php get_search_form(); ?>
 			<?php endif; ?><!--Close if Statement-->
-			<?php wp_reset_query(); ?><!--Reset Chcek On Query-->
+			<?php wp_reset_query(); ?><!--Reset Check On Query-->
 			</div><!--Close row-->
+		<?php $i = 1; ?>
+		<?php $args = array('post_type'=>'messages','posts_per_page'=> -1, 'order'=>'date' );
+			$loop = new WP_Query($args); ?>
+			<?php if( $loop->have_posts() ) : while( $loop->have_posts() ) : $loop->the_post(); ?>
+				<div class="row full-width" id="<?php the_title(); ?>">
+					<div class="col-xs-12 message-content">
+						<span class="the-date"><?php the_date();?></span>
+						<h2><?php the_title();?></h2>
+						<?php the_content(); ?>
+					</div><!--Close message-content-->
+				</div>
+				<hr/>
+				<?php $i++; ?>
+			<?php endwhile; else:?>
+			Sorry There May Be A Problem;
+			<?php get_search_form(); ?>
+		<?php endif; ?>
+		<?php wp_reset_query(); ?>
 		</div><!--Close container-box-->
 	</div><!--Close container-->
 </div><!--Close body-bg-->

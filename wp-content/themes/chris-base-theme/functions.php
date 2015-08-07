@@ -136,17 +136,17 @@ function twentyfifteen_widgets_init() {
 }
 add_action( 'widgets_init', 'twentyfifteen_widgets_init' );
 
-
+add_action( 'init', 'create_post_type');
 function create_post_type() {
 	
-	register_post_type( 'gallery',
+	register_post_type( 'event',
 		array(
 			'labels' => array(
-				'name' => __( 'Gallery' ),
-				'singular_name' => __( 'Gallery' )
+				'name' => __( 'Events' ),
+				'singular_name' => __( 'Events' )
 			),
 			'public' => true,
-			'menu_icon' => 'dashicons-format-gallery',
+			'menu_icon' => 'dashicons-calendar-alt',
 			'has_archive' => true,
 			'map_meta_cap' => true,
 			'hierarchical' => true,
@@ -157,18 +157,40 @@ function create_post_type() {
 				'page-attributes',
 				'custom-fields'
 				),
-			'rewrite' => array('slug' => 'gallery')
+			'rewrite' => array('slug' => 'event')
 		)
 	);
 	
-	register_post_type( 'testimonials',
+	register_post_type( 'slider',
 		array(
 			'labels' => array(
-				'name' => __( 'Testimonials' ),
-				'singular_name' => __( 'Testimonial' )
+				'name' => __( 'Home Page Slider' ),
+				'singular_name' => __( 'Home Page Slider' )
 			),
 			'public' => true,
-			'menu_icon' => 'dashicons-editor-quote',
+			'menu_icon' => 'dashicons-format-video',
+			'has_archive' => true,
+			'map_meta_cap' => true,
+			'hierarchical' => true,
+			'supports' => array(
+				'title',
+				'editor',
+				'thumbnail',
+				'page-attributes',
+				'custom-fields'
+				),
+			'rewrite' => array('slug' => 'slider')
+		)
+	);
+	
+	register_post_type( 'messages',
+		array(
+			'labels' => array(
+				'name' => __( 'Messages' ),
+				'singular_name' => __( 'Messages' )
+			),
+			'public' => true,
+			'menu_icon' => 'dashicons-book',
 			'has_archive' => true,
 			'map_meta_cap' => true,
 			'hierarchical' => true,
@@ -180,30 +202,7 @@ function create_post_type() {
 				'custom-fields',
 				'page-attributes'
 				),
-			'rewrite' => array('slug' => 'testimonial')
-		)
-	);
-	
-	register_post_type( 'homepage-slider',
-		array(
-			'labels' => array(
-				'name' => __( 'Homepage Slider' ),
-				'singular_name' => __( 'Homepage Slider' )
-			),
-			'menu_icon' => 'dashicons-slides',
-			'public' => true,
-			'has_archive' => true,
-			'map_meta_cap' => true,
-			'hierarchical' => true,
-			'supports' => array(
-				'title',
-				'editor',
-				'excerpt',
-				'thumbnail',
-				'custom-fields',
-				'page-attributes'
-				),
-			'rewrite' => array('slug' => 'homepage-slider')
+			'rewrite' => array('slug' => 'messages')
 		)
 	);
 

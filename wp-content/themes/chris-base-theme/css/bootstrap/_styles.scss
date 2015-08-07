@@ -33,21 +33,11 @@
 // Body Styles
 //------------
 .main-bg {
-	background-image: url("../i/bg.jpg");
+	background: #0A2D4D url("../img/bg.jpg");
 	background-size: 100% auto;
 	background-repeat: none;
-}
-.callout{
-	margin: 25px auto 0;
-	box-shadow: $box-shadow;
-	height: auto;
-	width: 100%;
-	text-shadow: $box-shadow;
-	img {
-		width: 100%;
-		height: auto;
-		overflow-x: hidden;
-	}
+	background-position: left top;
+	background-attachment: fixed;
 }
 .clear-container{
 	text-align: center;
@@ -61,11 +51,51 @@
 	}
 }
 
+//----------------
+// Message Styles
+//----------------
+
+.message-content {
+	text-align: center;
+}
+
+.the-date {
+	color: #333;
+	font-size: 24px;
+}
+
 
 //---------------
 // Callout Styles
 //---------------
 
+#messages {
+	a {
+		h2 {
+			:hover {
+				text-decoration: none;
+			}
+		}
+	}
+}
+
+.callout{
+	margin: 25px auto 0;
+	box-shadow: $box-shadow;
+	height: auto;
+	width: 100%;
+	text-shadow: $box-shadow;
+	img {
+		width: 100%;
+		height: auto;
+		overflow-x: hidden;
+	}
+	h2 {
+		:hover {
+			text-decoration: none;
+		}
+	}
+}
 .messages {
 	background: #2B3F53;
 }

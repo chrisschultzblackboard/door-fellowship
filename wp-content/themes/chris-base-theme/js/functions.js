@@ -162,8 +162,7 @@
 } )
 
 
-/*function startSlider() {
-	alert("Slider Ready!");
+function startSlider() {
 	var newSlide;
   $(".slider #1").show("fade", 500);
   $(".slider #1").delay(5500).hide("slide", {direction:'left'}, 500);
@@ -210,10 +209,10 @@ function animateSlide(){
 	}
 }
 
-window.onload = startSlider;*/
+window.onload = startSlider;
 
 
-function cjsSlider(){
+/*function cjsSlider(){
 
 	function animateSlider(){
 		$("slider #"+shown).hide("fade",500); //slide out
@@ -234,6 +233,6 @@ function cjsSlider(){
 	
 }
 
-window.onload = cjsSlider;
+window.onload = cjsSlider;*/
 
 

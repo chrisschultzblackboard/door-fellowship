@@ -50,6 +50,25 @@
 		margin-top: 0px;
 	}
 }
+.home-content {
+	border: 1px solid $main-blue;
+	background: #ccc;
+	color: #333;
+	padding: 25px 30px;
+}
+.home-service {
+	padding: 15px 0;
+	font-weight: bold;
+}
+
+//----------------
+// Button Styles
+//----------------
+
+.btn-directions {
+	margin: 8px 0;
+	width: 200px;
+}
 
 //----------------
 // Message Styles
@@ -97,7 +116,7 @@
 	}
 }
 .messages {
-	background: #2B3F53;
+	background: $main-blue;
 }
 .devotions {
 	background: #722929;

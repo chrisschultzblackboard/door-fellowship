@@ -9,7 +9,7 @@ get_header(); ?>
 			<div class="row">
 				<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
 					<div class="home-service">
-						Sunday Services: 10AM - 12PM 470 Pine Street Williamsport PA 17701
+						Sunday Services: 10:00AM - 12:00PM 470 Pine Street Williamsport PA 17701
 					</div><!--Close home-services-->
 				</div><!--Close col-->
 				<div class="col-xs-12 vol-sm-12 col-md-3 col-lg-3">
@@ -48,23 +48,20 @@ get_header(); ?>
 		<div class="container-box">
 			<div class="row">
 				<?php if( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-					<div class=" col-xs-12 col-sm-12 col-md-6 col-lg-6 content">
+					<div class=" col-xs-12 col-sm-12 col-md-8 col-lg-8 content">
 						<article>
 							<header>
 								<h1 class="page-title" itemprop="headline">
 									<?php the_title(); ?>
 								</h1>
 							</header><!--Close Header-->
-							<section itemprop="articleBody">
-								<?php if(has_post_thumbnail() ){ ?>
-									<?php the_post_thumbnail(array(200,200), array('class'=>'img-thumbail pull-left margin-right')); ?>
-								<?php } ?>
+							<div class="home-content">
 								<?php the_content(); ?>
-							</section><!--Close Section-->
+							</div><!--Close home-content-->
 						</article><!--Close Article-->
 					</div><!--Close content-->
 			<?php endwhile; else : ?><!--End while loop, continues if statement-->
-				Sorry there may be a problem.
+				Oops.... Looks like we are missing some content. Try Searching here for it.
 				<?php get_search_form(); ?>
 			<?php endif; ?><!--Close if Statement-->
 			<?php wp_reset_query(); ?><!--Reset Chcek On Query-->

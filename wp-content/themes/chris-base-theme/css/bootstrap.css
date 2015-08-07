@@ -1393,7 +1393,7 @@ html {
 /* line 27, bootstrap/_scaffolding.scss */
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.42857;
   color: #333333;
   background-color: #0A2D4D; }
@@ -1459,8 +1459,8 @@ img {
 
 /* line 113, bootstrap/_scaffolding.scss */
 hr {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 22px;
+  margin-bottom: 22px;
   border: 0;
   border-top: 1px solid #eeeeee; }
 
@@ -1518,8 +1518,8 @@ h1, h2, h3, h4, h5, h6,
 h1, .h1,
 h2, .h2,
 h3, .h3 {
-  margin-top: 20px;
-  margin-bottom: 10px; }
+  margin-top: 22px;
+  margin-bottom: 11px; }
   /* line 30, bootstrap/_type.scss */
   h1 small,
   h1 .small, .h1 small,
@@ -1536,8 +1536,8 @@ h3, .h3 {
 h4, .h4,
 h5, .h5,
 h6, .h6 {
-  margin-top: 10px;
-  margin-bottom: 10px; }
+  margin-top: 11px;
+  margin-bottom: 11px; }
   /* line 41, bootstrap/_type.scss */
   h4 small,
   h4 .small, .h4 small,
@@ -1552,47 +1552,47 @@ h6, .h6 {
 
 /* line 47, bootstrap/_type.scss */
 h1, .h1 {
-  font-size: 36px; }
+  font-size: 41px; }
 
 /* line 48, bootstrap/_type.scss */
 h2, .h2 {
-  font-size: 30px; }
+  font-size: 34px; }
 
 /* line 49, bootstrap/_type.scss */
 h3, .h3 {
-  font-size: 24px; }
+  font-size: 28px; }
 
 /* line 50, bootstrap/_type.scss */
 h4, .h4 {
-  font-size: 18px; }
+  font-size: 20px; }
 
 /* line 51, bootstrap/_type.scss */
 h5, .h5 {
-  font-size: 14px; }
+  font-size: 16px; }
 
 /* line 52, bootstrap/_type.scss */
 h6, .h6 {
-  font-size: 12px; }
+  font-size: 14px; }
 
 /* line 58, bootstrap/_type.scss */
 p {
-  margin: 0 0 10px; }
+  margin: 0 0 11px; }
 
 /* line 62, bootstrap/_type.scss */
 .lead {
-  margin-bottom: 20px;
-  font-size: 16px;
+  margin-bottom: 22px;
+  font-size: 18px;
   font-weight: 300;
   line-height: 1.4; }
   @media (min-width: 768px) {
     /* line 62, bootstrap/_type.scss */
     .lead {
-      font-size: 21px; } }
+      font-size: 24px; } }
 
 /* line 78, bootstrap/_type.scss */
 small,
 .small {
-  font-size: 85%; }
+  font-size: 87%; }
 
 /* line 83, bootstrap/_type.scss */
 mark,
@@ -1732,15 +1732,15 @@ a.bg-danger:focus {
 
 /* line 138, bootstrap/_type.scss */
 .page-header {
-  padding-bottom: 9px;
-  margin: 40px 0 20px;
+  padding-bottom: 10px;
+  margin: 44px 0 22px;
   border-bottom: 1px solid #eeeeee; }
 
 /* line 149, bootstrap/_type.scss */
 ul,
 ol {
   margin-top: 0;
-  margin-bottom: 10px; }
+  margin-bottom: 11px; }
   /* line 153, bootstrap/_type.scss */
   ul ul,
   ul ol,
@@ -1767,7 +1767,7 @@ ol {
 /* line 185, bootstrap/_type.scss */
 dl {
   margin-top: 0;
-  margin-bottom: 20px; }
+  margin-bottom: 22px; }
 
 /* line 189, bootstrap/_type.scss */
 dt,
@@ -1815,9 +1815,9 @@ abbr[data-original-title] {
 
 /* line 241, bootstrap/_type.scss */
 blockquote {
-  padding: 10px 20px;
-  margin: 0 0 20px;
-  font-size: 17.5px;
+  padding: 11px 22px;
+  margin: 0 0 22px;
+  font-size: 20px;
   border-left: 5px solid #eeeeee; }
   /* line 250, bootstrap/_type.scss */
   blockquote p:last-child,
@@ -1865,7 +1865,7 @@ blockquote.pull-right {
 
 /* line 294, bootstrap/_type.scss */
 address {
-  margin-bottom: 20px;
+  margin-bottom: 22px;
   font-style: normal;
   line-height: 1.42857; }
 
@@ -1902,9 +1902,9 @@ kbd {
 /* line 41, bootstrap/_code.scss */
 pre {
   display: block;
-  padding: 9.5px;
-  margin: 0 0 10px;
-  font-size: 13px;
+  padding: 10.5px;
+  margin: 0 0 11px;
+  font-size: 15px;
   line-height: 1.42857;
   word-break: break-all;
   word-wrap: break-word;
@@ -2870,7 +2870,7 @@ th {
 .table {
   width: 100%;
   max-width: 100%;
-  margin-bottom: 20px; }
+  margin-bottom: 22px; }
   /* line 31, bootstrap/_tables.scss */
   .table > thead > tr > th,
   .table > thead > tr > td,
@@ -3045,7 +3045,7 @@ table th[class*="col-"] {
     /* line 171, bootstrap/_tables.scss */
     .table-responsive {
       width: 100%;
-      margin-bottom: 15px;
+      margin-bottom: 16.5px;
       overflow-y: hidden;
       -ms-overflow-style: -ms-autohiding-scrollbar;
       border: 1px solid #ddd; }
@@ -3098,8 +3098,8 @@ legend {
   display: block;
   width: 100%;
   padding: 0;
-  margin-bottom: 20px;
-  font-size: 21px;
+  margin-bottom: 22px;
+  font-size: 24px;
   line-height: inherit;
   color: #333333;
   border: 0;
@@ -3151,7 +3151,7 @@ input[type="checkbox"]:focus {
 output {
   display: block;
   padding-top: 7px;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.42857;
   color: #555555; }
 
@@ -3159,9 +3159,9 @@ output {
 .form-control {
   display: block;
   width: 100%;
-  height: 34px;
+  height: 36px;
   padding: 6px 12px;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.42857;
   color: #555555;
   background-color: #fff;
@@ -3211,7 +3211,7 @@ input[type="search"] {
   input[type="time"].form-control,
   input[type="datetime-local"].form-control,
   input[type="month"].form-control {
-    line-height: 34px; }
+    line-height: 36px; }
   /* line 191, bootstrap/_forms.scss */
   input[type="date"].input-sm, .input-group-sm > input[type="date"].form-control,
   .input-group-sm > input[type="date"].input-group-addon,
@@ -3231,7 +3231,7 @@ input[type="search"] {
   .input-group-sm > input[type="month"].input-group-addon,
   .input-group-sm > .input-group-btn > input[type="month"].btn, .input-group-sm
   input[type="month"] {
-    line-height: 30px; }
+    line-height: 33px; }
   /* line 196, bootstrap/_forms.scss */
   input[type="date"].input-lg, .input-group-lg > input[type="date"].form-control,
   .input-group-lg > input[type="date"].input-group-addon,
@@ -3251,7 +3251,7 @@ input[type="search"] {
   .input-group-lg > input[type="month"].input-group-addon,
   .input-group-lg > .input-group-btn > input[type="month"].btn, .input-group-lg
   input[type="month"] {
-    line-height: 46px; } }
+    line-height: 49px; } }
 /* line 209, bootstrap/_forms.scss */
 .form-group {
   margin-bottom: 15px; }
@@ -3266,7 +3266,7 @@ input[type="search"] {
   /* line 225, bootstrap/_forms.scss */
   .radio label,
   .checkbox label {
-    min-height: 20px;
+    min-height: 22px;
     padding-left: 20px;
     margin-bottom: 0;
     font-weight: normal;
@@ -3327,7 +3327,7 @@ input[type="checkbox"] {
   padding-top: 7px;
   padding-bottom: 7px;
   margin-bottom: 0;
-  min-height: 34px; }
+  min-height: 38px; }
   /* line 309, bootstrap/_forms.scss */
   .form-control-static.input-lg, .input-group-lg > .form-control-static.form-control,
   .input-group-lg > .form-control-static.input-group-addon,
@@ -3341,9 +3341,9 @@ input[type="checkbox"] {
 .input-sm, .input-group-sm > .form-control,
 .input-group-sm > .input-group-addon,
 .input-group-sm > .input-group-btn > .btn {
-  height: 30px;
+  height: 33px;
   padding: 5px 10px;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.5;
   border-radius: 3px; }
 
@@ -3351,8 +3351,8 @@ input[type="checkbox"] {
 select.input-sm, .input-group-sm > select.form-control,
 .input-group-sm > select.input-group-addon,
 .input-group-sm > .input-group-btn > select.btn {
-  height: 30px;
-  line-height: 30px; }
+  height: 33px;
+  line-height: 33px; }
 
 /* line 84, bootstrap/mixins/_forms.scss */
 textarea.input-sm, .input-group-sm > textarea.form-control,
@@ -3366,34 +3366,34 @@ select[multiple].input-sm,
 
 /* line 327, bootstrap/_forms.scss */
 .form-group-sm .form-control {
-  height: 30px;
+  height: 33px;
   padding: 5px 10px;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.5;
   border-radius: 3px; }
 /* line 334, bootstrap/_forms.scss */
 .form-group-sm select.form-control {
-  height: 30px;
-  line-height: 30px; }
+  height: 33px;
+  line-height: 33px; }
 /* line 338, bootstrap/_forms.scss */
 .form-group-sm textarea.form-control,
 .form-group-sm select[multiple].form-control {
   height: auto; }
 /* line 342, bootstrap/_forms.scss */
 .form-group-sm .form-control-static {
-  height: 30px;
-  min-height: 32px;
+  height: 33px;
+  min-height: 36px;
   padding: 6px 10px;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.5; }
 
 /* line 71, bootstrap/mixins/_forms.scss */
 .input-lg, .input-group-lg > .form-control,
 .input-group-lg > .input-group-addon,
 .input-group-lg > .input-group-btn > .btn {
-  height: 46px;
+  height: 49px;
   padding: 10px 16px;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 1.33333;
   border-radius: 6px; }
 
@@ -3401,8 +3401,8 @@ select[multiple].input-sm,
 select.input-lg, .input-group-lg > select.form-control,
 .input-group-lg > select.input-group-addon,
 .input-group-lg > .input-group-btn > select.btn {
-  height: 46px;
-  line-height: 46px; }
+  height: 49px;
+  line-height: 49px; }
 
 /* line 84, bootstrap/mixins/_forms.scss */
 textarea.input-lg, .input-group-lg > textarea.form-control,
@@ -3416,25 +3416,25 @@ select[multiple].input-lg,
 
 /* line 353, bootstrap/_forms.scss */
 .form-group-lg .form-control {
-  height: 46px;
+  height: 49px;
   padding: 10px 16px;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 1.33333;
   border-radius: 6px; }
 /* line 360, bootstrap/_forms.scss */
 .form-group-lg select.form-control {
-  height: 46px;
-  line-height: 46px; }
+  height: 49px;
+  line-height: 49px; }
 /* line 364, bootstrap/_forms.scss */
 .form-group-lg textarea.form-control,
 .form-group-lg select[multiple].form-control {
   height: auto; }
 /* line 368, bootstrap/_forms.scss */
 .form-group-lg .form-control-static {
-  height: 46px;
-  min-height: 38px;
+  height: 49px;
+  min-height: 42px;
   padding: 11px 16px;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 1.33333; }
 
 /* line 382, bootstrap/_forms.scss */
@@ -3442,7 +3442,7 @@ select[multiple].input-lg,
   position: relative; }
   /* line 387, bootstrap/_forms.scss */
   .has-feedback .form-control {
-    padding-right: 42.5px; }
+    padding-right: 45px; }
 
 /* line 392, bootstrap/_forms.scss */
 .form-control-feedback {
@@ -3451,9 +3451,9 @@ select[multiple].input-lg,
   right: 0;
   z-index: 2;
   display: block;
-  width: 34px;
-  height: 34px;
-  line-height: 34px;
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
   text-align: center;
   pointer-events: none; }
 
@@ -3463,9 +3463,9 @@ select[multiple].input-lg,
 .input-group-lg > .input-group-btn > .btn + .form-control-feedback,
 .input-group-lg + .form-control-feedback,
 .form-group-lg .form-control + .form-control-feedback {
-  width: 46px;
-  height: 46px;
-  line-height: 46px; }
+  width: 49px;
+  height: 49px;
+  line-height: 49px; }
 
 /* line 411, bootstrap/_forms.scss */
 .input-sm + .form-control-feedback, .input-group-sm > .form-control + .form-control-feedback,
@@ -3473,9 +3473,9 @@ select[multiple].input-lg,
 .input-group-sm > .input-group-btn > .btn + .form-control-feedback,
 .input-group-sm + .form-control-feedback,
 .form-group-sm .form-control + .form-control-feedback {
-  width: 30px;
-  height: 30px;
-  line-height: 30px; }
+  width: 33px;
+  height: 33px;
+  line-height: 33px; }
 
 /* line 8, bootstrap/mixins/_forms.scss */
 .has-success .help-block,
@@ -3560,7 +3560,7 @@ select[multiple].input-lg,
 
 /* line 433, bootstrap/_forms.scss */
 .has-feedback label ~ .form-control-feedback {
-  top: 25px; }
+  top: 27px; }
 /* line 436, bootstrap/_forms.scss */
 .has-feedback label.sr-only ~ .form-control-feedback {
   top: 0; }
@@ -3633,7 +3633,7 @@ select[multiple].input-lg,
 /* line 563, bootstrap/_forms.scss */
 .form-horizontal .radio,
 .form-horizontal .checkbox {
-  min-height: 27px; }
+  min-height: 29px; }
 /* line 569, bootstrap/_forms.scss */
 .form-horizontal .form-group {
   margin-left: -15px;
@@ -3658,12 +3658,12 @@ select[multiple].input-lg,
   /* line 597, bootstrap/_forms.scss */
   .form-horizontal .form-group-lg .control-label {
     padding-top: 14.33333px;
-    font-size: 18px; } }
+    font-size: 20px; } }
 @media (min-width: 768px) {
   /* line 605, bootstrap/_forms.scss */
   .form-horizontal .form-group-sm .control-label {
     padding-top: 6px;
-    font-size: 12px; } }
+    font-size: 14px; } }
 
 /* line 9, bootstrap/_buttons.scss */
 .btn {
@@ -3678,7 +3678,7 @@ select[multiple].input-lg,
   border: 1px solid transparent;
   white-space: nowrap;
   padding: 6px 12px;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.42857;
   border-radius: 4px;
   -webkit-user-select: none;
@@ -3692,7 +3692,7 @@ select[multiple].input-lg,
     outline-offset: -2px; }
   /* line 32, bootstrap/_buttons.scss */
   .btn:hover, .btn:focus, .btn.focus {
-    color: #333;
+    color: #fff;
     text-decoration: none; }
   /* line 39, bootstrap/_buttons.scss */
   .btn:active, .btn.active {
@@ -3714,40 +3714,40 @@ a.btn.disabled, fieldset[disabled] a.btn {
 
 /* line 68, bootstrap/_buttons.scss */
 .btn-default {
-  color: #333;
-  background-color: #fff;
+  color: #fff;
+  background-color: #2B3F53;
   border-color: #ccc; }
   /* line 11, bootstrap/mixins/_buttons.scss */
   .btn-default:focus, .btn-default.focus {
-    color: #333;
-    background-color: #e6e6e6;
+    color: #fff;
+    background-color: #1a2531;
     border-color: #8c8c8c; }
   /* line 17, bootstrap/mixins/_buttons.scss */
   .btn-default:hover {
-    color: #333;
-    background-color: #e6e6e6;
+    color: #fff;
+    background-color: #1a2531;
     border-color: #adadad; }
   /* line 22, bootstrap/mixins/_buttons.scss */
   .btn-default:active, .btn-default.active, .open > .btn-default.dropdown-toggle {
-    color: #333;
-    background-color: #e6e6e6;
+    color: #fff;
+    background-color: #1a2531;
     border-color: #adadad; }
     /* line 29, bootstrap/mixins/_buttons.scss */
     .btn-default:active:hover, .btn-default:active:focus, .btn-default:active.focus, .btn-default.active:hover, .btn-default.active:focus, .btn-default.active.focus, .open > .btn-default.dropdown-toggle:hover, .open > .btn-default.dropdown-toggle:focus, .open > .btn-default.dropdown-toggle.focus {
-      color: #333;
-      background-color: #d4d4d4;
+      color: #fff;
+      background-color: #0d141a;
       border-color: #8c8c8c; }
   /* line 37, bootstrap/mixins/_buttons.scss */
   .btn-default:active, .btn-default.active, .open > .btn-default.dropdown-toggle {
     background-image: none; }
   /* line 45, bootstrap/mixins/_buttons.scss */
   .btn-default.disabled, .btn-default.disabled:hover, .btn-default.disabled:focus, .btn-default.disabled.focus, .btn-default.disabled:active, .btn-default.disabled.active, .btn-default[disabled], .btn-default[disabled]:hover, .btn-default[disabled]:focus, .btn-default[disabled].focus, .btn-default[disabled]:active, .btn-default[disabled].active, fieldset[disabled] .btn-default, fieldset[disabled] .btn-default:hover, fieldset[disabled] .btn-default:focus, fieldset[disabled] .btn-default.focus, fieldset[disabled] .btn-default:active, fieldset[disabled] .btn-default.active {
-    background-color: #fff;
+    background-color: #2B3F53;
     border-color: #ccc; }
   /* line 56, bootstrap/mixins/_buttons.scss */
   .btn-default .badge {
-    color: #fff;
-    background-color: #333; }
+    color: #2B3F53;
+    background-color: #fff; }
 
 /* line 71, bootstrap/_buttons.scss */
 .btn-primary {
@@ -3960,21 +3960,21 @@ a.btn.disabled, fieldset[disabled] a.btn {
 /* line 135, bootstrap/_buttons.scss */
 .btn-lg, .btn-group-lg > .btn {
   padding: 10px 16px;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 1.33333;
   border-radius: 6px; }
 
 /* line 139, bootstrap/_buttons.scss */
 .btn-sm, .btn-group-sm > .btn {
   padding: 5px 10px;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.5;
   border-radius: 3px; }
 
 /* line 143, bootstrap/_buttons.scss */
 .btn-xs, .btn-group-xs > .btn {
   padding: 1px 5px;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.5;
   border-radius: 3px; }
 
@@ -4029,52 +4029,69 @@ input[type="button"].btn-block {
     color: #fff;
     margin-top: 0px; }
 
-/* line 58, bootstrap/_styles.scss */
+/* line 53, bootstrap/_styles.scss */
+.home-content {
+  border: 1px solid #2B3F53;
+  background: #ccc;
+  color: #333;
+  padding: 25px 30px; }
+
+/* line 59, bootstrap/_styles.scss */
+.home-service {
+  padding: 15px 0;
+  font-weight: bold; }
+
+/* line 68, bootstrap/_styles.scss */
+.btn-directions {
+  margin: 8px 0;
+  width: 200px; }
+
+/* line 77, bootstrap/_styles.scss */
 .message-content {
   text-align: center; }
 
-/* line 62, bootstrap/_styles.scss */
+/* line 81, bootstrap/_styles.scss */
 .the-date {
   color: #333;
   font-size: 24px; }
 
-/* line 75, bootstrap/_styles.scss */
+/* line 94, bootstrap/_styles.scss */
 #messages a h2 :hover {
   text-decoration: none; }
 
-/* line 82, bootstrap/_styles.scss */
+/* line 101, bootstrap/_styles.scss */
 .callout {
   margin: 25px auto 0;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
   height: auto;
   width: 100%;
   text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8); }
-  /* line 88, bootstrap/_styles.scss */
+  /* line 107, bootstrap/_styles.scss */
   .callout img {
     width: 100%;
     height: auto;
     overflow-x: hidden; }
-  /* line 94, bootstrap/_styles.scss */
+  /* line 113, bootstrap/_styles.scss */
   .callout h2 :hover {
     text-decoration: none; }
 
-/* line 99, bootstrap/_styles.scss */
+/* line 118, bootstrap/_styles.scss */
 .messages {
   background: #2B3F53; }
 
-/* line 102, bootstrap/_styles.scss */
+/* line 121, bootstrap/_styles.scss */
 .devotions {
   background: #722929; }
 
-/* line 105, bootstrap/_styles.scss */
+/* line 124, bootstrap/_styles.scss */
 .events {
   background: #366236; }
 
-/* line 113, bootstrap/_styles.scss */
+/* line 132, bootstrap/_styles.scss */
 .footer {
   margin-bottom: 25px; }
 
-/* line 117, bootstrap/_styles.scss */
+/* line 136, bootstrap/_styles.scss */
 #searchsubmit {
   height: 40px;
   width: auto;
@@ -4082,12 +4099,12 @@ input[type="button"].btn-block {
   background-color: #2B3F53;
   color: #fff;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); }
-  /* line 124, bootstrap/_styles.scss */
+  /* line 143, bootstrap/_styles.scss */
   #searchsubmit :hover {
     box-shadow: 2px 2px 5px transparent;
     color: #000; }
 
-/* line 129, bootstrap/_styles.scss */
+/* line 148, bootstrap/_styles.scss */
 #s {
   border-radius: 5px;
   border: 1px solid #ddd;
@@ -4163,7 +4180,7 @@ tbody.collapse.in {
   padding: 5px 0;
   margin: 2px 0 0;
   list-style: none;
-  font-size: 14px;
+  font-size: 16px;
   text-align: left;
   background-color: #fff;
   border: 1px solid #ccc;
@@ -4179,7 +4196,7 @@ tbody.collapse.in {
   /* line 60, bootstrap/_dropdowns.scss */
   .dropdown-menu .divider {
     height: 1px;
-    margin: 9px 0;
+    margin: 10px 0;
     overflow: hidden;
     background-color: #e5e5e5; }
   /* line 65, bootstrap/_dropdowns.scss */
@@ -4237,7 +4254,7 @@ tbody.collapse.in {
 .dropdown-header {
   display: block;
   padding: 3px 20px;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.42857;
   color: #777777;
   white-space: nowrap; }
@@ -4522,7 +4539,7 @@ tbody.collapse.in {
 /* line 73, bootstrap/_input-groups.scss */
 .input-group-addon {
   padding: 6px 12px;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: normal;
   line-height: 1;
   color: #555555;
@@ -4535,14 +4552,14 @@ tbody.collapse.in {
   .input-group-sm > .input-group-addon,
   .input-group-sm > .input-group-btn > .input-group-addon.btn {
     padding: 5px 10px;
-    font-size: 12px;
+    font-size: 14px;
     border-radius: 3px; }
   /* line 90, bootstrap/_input-groups.scss */
   .input-group-addon.input-lg,
   .input-group-lg > .input-group-addon,
   .input-group-lg > .input-group-btn > .input-group-addon.btn {
     padding: 10px 16px;
-    font-size: 18px;
+    font-size: 20px;
     border-radius: 6px; }
   /* line 97, bootstrap/_input-groups.scss */
   .input-group-addon input[type="radio"],
@@ -4644,7 +4661,7 @@ tbody.collapse.in {
   /* line 59, bootstrap/_navs.scss */
   .nav .nav-divider {
     height: 1px;
-    margin: 9px 0;
+    margin: 10px 0;
     overflow: hidden;
     background-color: #e5e5e5; }
   /* line 66, bootstrap/_navs.scss */
@@ -4891,9 +4908,9 @@ tbody.collapse.in {
 /* line 164, bootstrap/_navbar.scss */
 .navbar-brand {
   float: left;
-  padding: 15px 15px;
-  font-size: 18px;
-  line-height: 20px;
+  padding: 14px 15px;
+  font-size: 20px;
+  line-height: 22px;
   height: 50px; }
   /* line 171, bootstrap/_navbar.scss */
   .navbar-brand:hover, .navbar-brand:focus {
@@ -4942,7 +4959,7 @@ tbody.collapse.in {
   .navbar-nav > li > a {
     padding-top: 10px;
     padding-bottom: 10px;
-    line-height: 20px; }
+    line-height: 22px; }
   @media (max-width: 767px) {
     /* line 244, bootstrap/_navbar.scss */
     .navbar-nav .open .dropdown-menu {
@@ -4959,7 +4976,7 @@ tbody.collapse.in {
         padding: 5px 15px 5px 25px; }
       /* line 256, bootstrap/_navbar.scss */
       .navbar-nav .open .dropdown-menu > li > a {
-        line-height: 20px; }
+        line-height: 22px; }
         /* line 258, bootstrap/_navbar.scss */
         .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-nav .open .dropdown-menu > li > a:focus {
           background-image: none; } }
@@ -4975,8 +4992,8 @@ tbody.collapse.in {
         float: left; }
         /* line 275, bootstrap/_navbar.scss */
         .navbar-nav > li > a {
-          padding-top: 15px;
-          padding-bottom: 15px; } }
+          padding-top: 14px;
+          padding-bottom: 14px; } }
 
 /* line 289, bootstrap/_navbar.scss */
 .navbar-form {
@@ -4987,8 +5004,8 @@ tbody.collapse.in {
   border-bottom: 1px solid transparent;
   -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
-  margin-top: 8px;
-  margin-bottom: 8px; }
+  margin-top: 7px;
+  margin-bottom: 7px; }
   @media (min-width: 768px) {
     /* line 472, bootstrap/_forms.scss */
     .navbar-form .form-group {
@@ -5073,12 +5090,12 @@ tbody.collapse.in {
 
 /* line 346, bootstrap/_navbar.scss */
 .navbar-btn {
-  margin-top: 8px;
-  margin-bottom: 8px; }
+  margin-top: 7px;
+  margin-bottom: 7px; }
   /* line 349, bootstrap/_navbar.scss */
   .navbar-btn.btn-sm, .btn-group-sm > .navbar-btn.btn {
-    margin-top: 10px;
-    margin-bottom: 10px; }
+    margin-top: 8.5px;
+    margin-bottom: 8.5px; }
   /* line 352, bootstrap/_navbar.scss */
   .navbar-btn.btn-xs, .btn-group-xs > .navbar-btn.btn {
     margin-top: 14px;
@@ -5086,8 +5103,8 @@ tbody.collapse.in {
 
 /* line 362, bootstrap/_navbar.scss */
 .navbar-text {
-  margin-top: 15px;
-  margin-bottom: 15px; }
+  margin-top: 14px;
+  margin-bottom: 14px; }
   @media (min-width: 768px) {
     /* line 362, bootstrap/_navbar.scss */
     .navbar-text {
@@ -5272,7 +5289,7 @@ tbody.collapse.in {
 /* line 6, bootstrap/_breadcrumbs.scss */
 .breadcrumb {
   padding: 8px 15px;
-  margin-bottom: 20px;
+  margin-bottom: 22px;
   list-style: none;
   background-color: #f5f5f5;
   border-radius: 4px; }
@@ -5292,7 +5309,7 @@ tbody.collapse.in {
 .pagination {
   display: inline-block;
   padding-left: 0;
-  margin: 20px 0;
+  margin: 22px 0;
   border-radius: 4px; }
   /* line 10, bootstrap/_pagination.scss */
   .pagination > li {
@@ -5354,7 +5371,7 @@ tbody.collapse.in {
 .pagination-lg > li > a,
 .pagination-lg > li > span {
   padding: 10px 16px;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 1.33333; }
 /* line 12, bootstrap/mixins/_pagination.scss */
 .pagination-lg > li:first-child > a,
@@ -5371,7 +5388,7 @@ tbody.collapse.in {
 .pagination-sm > li > a,
 .pagination-sm > li > span {
   padding: 5px 10px;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.5; }
 /* line 12, bootstrap/mixins/_pagination.scss */
 .pagination-sm > li:first-child > a,
@@ -5387,7 +5404,7 @@ tbody.collapse.in {
 /* line 6, bootstrap/_pager.scss */
 .pager {
   padding-left: 0;
-  margin: 20px 0;
+  margin: 22px 0;
   list-style: none;
   text-align: center; }
   /* line 14, bootstrap/mixins/_clearfix.scss */
@@ -5503,7 +5520,7 @@ a.label:hover, a.label:focus {
   display: inline-block;
   min-width: 10px;
   padding: 3px 7px;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: bold;
   color: #fff;
   line-height: 1;
@@ -5547,7 +5564,7 @@ a.badge:hover, a.badge:focus {
 .thumbnail {
   display: block;
   padding: 4px;
-  margin-bottom: 20px;
+  margin-bottom: 22px;
   line-height: 1.42857;
   background-color: #0A2D4D;
   border: 1px solid #ddd;
@@ -5577,7 +5594,7 @@ a.thumbnail.active {
 /* line 9, bootstrap/_alerts.scss */
 .alert {
   padding: 15px;
-  margin-bottom: 20px;
+  margin-bottom: 22px;
   border: 1px solid transparent;
   border-radius: 4px; }
   /* line 16, bootstrap/_alerts.scss */
@@ -5668,8 +5685,8 @@ a.thumbnail.active {
 /* line 26, bootstrap/_progress-bars.scss */
 .progress {
   overflow: hidden;
-  height: 20px;
-  margin-bottom: 20px;
+  height: 22px;
+  margin-bottom: 22px;
   background-color: #f5f5f5;
   border-radius: 4px;
   -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
@@ -5680,8 +5697,8 @@ a.thumbnail.active {
   float: left;
   width: 0%;
   height: 100%;
-  font-size: 12px;
-  line-height: 20px;
+  font-size: 14px;
+  line-height: 22px;
   color: #fff;
   text-align: center;
   background-color: black;
@@ -5999,7 +6016,7 @@ button.list-group-item-danger {
 
 /* line 7, bootstrap/_panels.scss */
 .panel {
-  margin-bottom: 20px;
+  margin-bottom: 22px;
   background-color: #fff;
   border: 1px solid transparent;
   border-radius: 4px;
@@ -6031,7 +6048,7 @@ button.list-group-item-danger {
 .panel-title {
   margin-top: 0;
   margin-bottom: 0;
-  font-size: 16px;
+  font-size: 18px;
   color: inherit; }
   /* line 39, bootstrap/_panels.scss */
   .panel-title > a,
@@ -6227,7 +6244,7 @@ button.list-group-item-danger {
 
 /* line 222, bootstrap/_panels.scss */
 .panel-group {
-  margin-bottom: 20px; }
+  margin-bottom: 22px; }
   /* line 226, bootstrap/_panels.scss */
   .panel-group .panel {
     margin-bottom: 0;
@@ -6420,7 +6437,7 @@ button.list-group-item-danger {
 /* line 6, bootstrap/_close.scss */
 .close {
   float: right;
-  font-size: 21px;
+  font-size: 24px;
   font-weight: bold;
   line-height: 1;
   color: #000;
@@ -6606,7 +6623,7 @@ button.close {
   word-break: normal;
   word-spacing: normal;
   word-wrap: normal;
-  font-size: 12px;
+  font-size: 14px;
   opacity: 0;
   filter: alpha(opacity=0); }
   /* line 18, bootstrap/_tooltip.scss */
@@ -6728,7 +6745,7 @@ button.close {
   word-break: normal;
   word-spacing: normal;
   word-wrap: normal;
-  font-size: 14px;
+  font-size: 16px;
   background-color: #fff;
   background-clip: padding-box;
   border: 1px solid #ccc;
@@ -6753,7 +6770,7 @@ button.close {
 .popover-title {
   margin: 0;
   padding: 8px 14px;
-  font-size: 14px;
+  font-size: 16px;
   background-color: #f7f7f7;
   border-bottom: 1px solid #ebebeb;
   border-radius: 5px 5px 0 0; }

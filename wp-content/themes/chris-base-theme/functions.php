@@ -6,6 +6,7 @@ add_theme_support('menus');
 add_theme_support( 'post-thumbnails' );
 set_post_thumbnail_size(200, 200, true); // Normal post thumbnails
 
+ini_set( 'mysql.trace_mode', 0 );
 
 // Custom CSS for the login page
 // Create wp-login.css in your theme folder

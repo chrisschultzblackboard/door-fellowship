@@ -52,7 +52,7 @@ get_header(); ?>
 						<article>
 							<header>
 								<h1 class="page-title" itemprop="headline">
-									<?php the_title(); ?>
+									Daily Verse
 								</h1>
 							</header><!--Close Header-->
 							<div class="home-content">

@@ -60,7 +60,13 @@
 	padding: 15px 0;
 	font-weight: bold;
 }
-
+.full-width {
+	margin: 0 -15px;
+}
+.dailyVersesWrapper a {
+    color:#000;
+    font-weight:bold;
+}
 //----------------
 // Button Styles
 //----------------
@@ -76,11 +82,16 @@
 
 .message-content {
 	text-align: center;
+	h3 {
+		margin-top: 5px;
+	}
 }
 
-.the-date {
-	color: #333;
-	font-size: 24px;
+.the-date {    
+	font-family: Aria, serif;
+    color: rgb(162, 168, 201);
+    font-size: 20px;
+    font-style: italic;
 }
 
 
@@ -149,4 +160,5 @@
 	border-radius: 5px;
 	border: 1px solid #ddd;
 	box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+	width: 200px;
 }

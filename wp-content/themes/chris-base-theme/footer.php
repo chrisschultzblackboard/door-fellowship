@@ -30,6 +30,17 @@
 		</div><!--Close row-->
 	</div><!--Close container-box-->
 </div><!--Close container-->
+<script>
+$(document).ready(function(){
+$.ajax({
+url:'http://dailyverses.net/getdailyverse.ashx?language=en&isdirect=1&url=' + window.location.hostname,
+dataType: 'JSONP',
+success:function(json){
+$(".dailyVersesWrapper").prepend(json.html);
+}
+});
+});
+</script>
 
 <?php wp_footer(); ?>
 

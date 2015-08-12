@@ -83,6 +83,7 @@
 .message-content {
 	text-align: center;
 	h3 {
+		font-weight: 100;
 		margin-top: 5px;
 	}
 }
@@ -90,7 +91,7 @@
 .the-date {    
 	font-family: Aria, serif;
     color: rgb(162, 168, 201);
-    font-size: 20px;
+    font-size: 16px;
     font-style: italic;
 }
 
@@ -99,14 +100,10 @@
 // Callout Styles
 //---------------
 
-#messages {
-	a {
-		h2 {
-			:hover {
-				text-decoration: none;
-			}
+.no-link {
+		:hover {
+			text-decoration: none;
 		}
-	}
 }
 
 .callout{

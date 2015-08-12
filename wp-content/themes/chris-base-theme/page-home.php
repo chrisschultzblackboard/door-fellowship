@@ -22,7 +22,7 @@ get_header(); ?>
 	</div><!--Close container-->
 	<div class="clear-container">
 		<div class="row center">
-			<div id="messages" class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+			<div id="messages" class="col-xs-12 col-sm-12 col-md-4 col-lg-4 no-link">
 				<a href="<?php bloginfo('home'); ?>/messages/">
 					<div class="callout messages">
 						<img src="<?php bloginfo('template_url'); ?>/img/messages.jpg"/>
@@ -30,13 +30,13 @@ get_header(); ?>
 					</div><!--Close callout-->
 				</a><!--Close messages link-->
 			</div><!--Close Messages-->
-			<div id="devotions" class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+			<div id="devotions" class="col-xs-12 col-sm-12 col-md-4 col-lg-4 no-link">
 				<div class="callout devotions">
 					<img src="<?php bloginfo('template_url'); ?>/img/BIBLE.jpg"/>
 					<h2>Devotions</h2>
 				</div><!--Close callout-->
 			</div><!--Close Devotions-->
-			<div id="events" class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+			<div id="events" class="col-xs-12 col-sm-12 col-md-4 col-lg-4 no-link">
 				<div class="callout events">
 					<img src="<?php bloginfo('template_url'); ?>/img/calendar.jpg"/>
 					<h2>Events</h2>

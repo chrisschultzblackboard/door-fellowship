@@ -18,6 +18,31 @@
 .underline {
 	border-bottom: 1px solid #000;
 }
+.navigation {
+    background: #131313;
+    padding: 10px 0 0;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+.head-container {
+    position: relative;
+    text-align: center;
+}
+.head-image {
+    height: 700px;
+    width: 100%;
+    background-image: url("../img/the-door.jpg");
+    background-position: center 0px;
+    color: #fff;
+    text-align: center;
+}
+#head-content {
+    margin-top: 150px;
+}
+.empty-block {
+    height: 1000px;
+}
 
 
 //------------
@@ -28,16 +53,11 @@
 }
 
 
-
 //------------
 // Body Styles
 //------------
 .main-bg {
-	background: #0A2D4D url("../img/bg.jpg");
-	background-size: 100% auto;
-	background-repeat: none;
-	background-position: left top;
-	background-attachment: fixed;
+	background: #fff;
 }
 .clear-container{
 	text-align: center;

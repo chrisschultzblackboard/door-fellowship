@@ -3,50 +3,23 @@
 * Template Name: Home Page
 */
 get_header(); ?>
-<div class="body-bg">
+<div class="body-bg" onload="startParallax();">
+    <div class="head-container">
+        <div class="head-image">
+            <div class="container">
+                    <div class="row">
+                        <div id="head-content" class="col-xs-6">
+                            <h1>Welcome</h1>
+                            <p>Do singulis si occaecat ex sunt commodo sed minim quae, admodum varias excepteur fabulas, iis minim laborum vidisse. Hic irure in labore. Eram pariatur ut incurreret.</p>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
 	<div class="container">
-		<div class="container-box">
 			<div class="row">
-				<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
-					<div class="home-service">
-						Sunday Services: 10:00AM - 12:00PM 470 Pine Street Williamsport PA 17701
-					</div><!--Close home-services-->
-				</div><!--Close col-->
-				<div class="col-xs-12 vol-sm-12 col-md-3 col-lg-3">
-					<div class="btn btn-default btn-directions">
-						Get Directions
-					</div>
-				</div>
-			</div><!--Close row-->
-		</div><!--Close container-box-->
-	</div><!--Close container-->
-	<div class="clear-container">
-		<div class="row center">
-			<div id="messages" class="col-xs-12 col-sm-12 col-md-4 col-lg-4 no-link">
-				<a href="<?php bloginfo('home'); ?>/messages/">
-					<div class="callout messages">
-						<img src="<?php bloginfo('template_url'); ?>/img/messages.jpg"/>
-						<h2>Messages</h2>
-					</div><!--Close callout-->
-				</a><!--Close messages link-->
-			</div><!--Close Messages-->
-			<div id="devotions" class="col-xs-12 col-sm-12 col-md-4 col-lg-4 no-link">
-				<div class="callout devotions">
-					<img src="<?php bloginfo('template_url'); ?>/img/BIBLE.jpg"/>
-					<h2>Devotions</h2>
-				</div><!--Close callout-->
-			</div><!--Close Devotions-->
-			<div id="events" class="col-xs-12 col-sm-12 col-md-4 col-lg-4 no-link">
-				<div class="callout events">
-					<img src="<?php bloginfo('template_url'); ?>/img/calendar.jpg"/>
-					<h2>Events</h2>
-				</div><!--Close callout-->
-			</div><!--Close Events-->
-		</div><!--Close row-->
-	</div><!--Close clear-container-->
-	<div class="container">
-		<div class="container-box">
-			<div class="row">
+                <div class="empty-block"></div>
+                <div class="col-xs-12">
 				<?php if( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 					<div class=" col-xs-12 col-sm-12 col-md-8 col-lg-8 content">
 						<article>
@@ -54,19 +27,19 @@ get_header(); ?>
 								<h1 class="page-title" itemprop="headline">
 									Daily Verse
 								</h1>
-							</header><!--Close Header-->
+							</header>
 							<div class="home-content">
 								<?php the_content(); ?>
-							</div><!--Close home-content-->
-						</article><!--Close Article-->
-					</div><!--Close content-->
-			<?php endwhile; else : ?><!--End while loop, continues if statement-->
+							</div>
+						</article>
+					</div>
+			<?php endwhile; else : ?>
 				Oops.... Looks like we are missing some content. Try Searching here for it.
 				<?php get_search_form(); ?>
-			<?php endif; ?><!--Close if Statement-->
-			<?php wp_reset_query(); ?><!--Reset Chcek On Query-->
-			</div><!--Close row-->
-		</div><!--Close container-box-->
-	</div><!--Close container-->
-</div><!--Close body-bg-->
+			<?php endif; ?>
+			<?php wp_reset_query(); ?>
+			</div>
+		</div>
+	</div>
+</div>
 <?php get_footer(); ?>

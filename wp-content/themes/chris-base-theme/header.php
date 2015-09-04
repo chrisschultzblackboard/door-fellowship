@@ -33,31 +33,28 @@
 	<![endif]-->
 </head>
 
-<body class="main-bg">
+<body class="main-bg" onload="startParallax();">
 <div id="top" class="hfeed site">
 <header role="banner">
-<div class="container">
-	<div class="container-box">
-		<div class="row underline">
-			<div id="logo" class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+<div class="navigation">
+    <div class="container">
+		<div class="row">
+			<div id="logo" class="col-xs-5 col-sm-5 col-md-4 col-lg-4">
 				<a class="main-logo" href="<?php echo get_option('home'); ?>" alt="<?php the_title(); ?>">
 					<img src="<?php bloginfo('template_url'); ?>/img/logo.png">
 				</a>
-			</div><!--Close logo-->
+			</div>
 			<div id="testimonial" class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
 
-			</div><!--Close testimonial-->
-		</div><!--Close row-->
-	<div class="navbar navbar-default">
+			</div>
+            <div class="navbar navbar-default">
 	          <nav class="navigation navbar navbar-default" role="navigation">
 	              <div class="navbar-header">
 	                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
 	                    <span class="sr-only">Toggle navigation</span>
 	                    <span>Menu</span>
 	                  </button>
-	              </div><!--Close navbar-header-->
-	        
-	              <!-- Collect the nav links, forms, and other content for toggling -->
+                  </div>
 	              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 	                    <?php 
 	                        wp_nav_menu( array(
@@ -68,31 +65,11 @@
 	                        'fallback_cb'    => '__return_false')
 	                        );
 	                    ?>
-	            </div><!--Close chris-navbar-->
-	          </nav><!--Close navigation-->
-	</div><!--Close navbar-->
-<?php if(is_front_page()) { ?>
-	<div class="row">
-		<div class="col-xs-12">
-			<div class="wrapper">
-				<div class="slider">
-				<?php $i = 1; ?>
-				<?php $args = array('post_type'=>'slider', 'order'=>'ASC', 'orderby'=>'menu_order', 'posts_per_page'=> -1);
-				 $query = new WP_Query($args); ?>
-				<?php if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>
-					<?php if(has_post_thumbnail()){ the_post_thumbnail('full', array('class' => 'slider-img', 'id' => $i) ); }?>
-				<?php $i++; ?>
-			<?php endwhile; else : ?>
-				<p>Something is Missing, Try again.</p>
-			<?php endif; ?>
-			<?php wp_reset_postdata(); ?>
-				</div><!--Close slider-->
-				<div class="slidernav">
-				</div><!--Close slidernav-->
-			</div><!--Close wrapper-->
-		</div><!--Close col-xs-12-->
-	</div><!--Close row-->
-<?php } ; ?>
-</div><!--Close container-box-->
-</div><!--Close container-->
-</header><!--Close Banner-->
+	            </div>
+	          </nav>
+	       </div>
+		</div>
+    </div>
+</div>
+</div>
+</header>

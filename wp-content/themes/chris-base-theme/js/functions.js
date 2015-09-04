@@ -1,3 +1,25 @@
+/* Parallax Settings */
+
+function startParallax() {
+    $(window).scroll(function(){
+        var wScroll = $(this).scrollTop();
+        if(wScroll > 0){    
+            console.log(wScroll); 
+            
+            $("#head-content").css({
+                'transform': 'translate(0px,' + wScroll / 1.2 + 'px)'
+            });
+            
+            $('.head-image').css({
+                'background-position' : 'center' + wScroll / -5 + 'px)'
+            });
+        }
+                     
+    });
+    
+}
+
+
 /* global screenReaderText */
 /**
  * Theme functions file.

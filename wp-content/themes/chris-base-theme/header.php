@@ -13,6 +13,8 @@
     <title><?php wp_title(''); ?></title>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width">
+    <meta name="google" content="notranslate">
+    <meta http-equiv="Content-Language" content="en">
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
 	<!--Style Sheet-->
@@ -44,10 +46,10 @@
 					<img src="<?php bloginfo('template_url'); ?>/img/logo.png">
 				</a>
 			</div>
-			<div id="testimonial" class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-
+			<div id="construction" class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                <h5>Site Under Construction. More features to come.</h5>
 			</div>
-            <div class="navbar navbar-default">
+            <!--<div class="navbar navbar-default">
 	          <nav class="navigation navbar navbar-default" role="navigation">
 	              <div class="navbar-header">
 	                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -67,7 +69,7 @@
 	                    ?>
 	            </div>
 	          </nav>
-	       </div>
+	       </div>-->
 		</div>
     </div>
 </div>

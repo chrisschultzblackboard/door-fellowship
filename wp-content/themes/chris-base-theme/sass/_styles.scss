@@ -19,31 +19,106 @@
 	border-bottom: 1px solid #000;
 }
 .navigation {
-    background: #131313;
+    background: #fff;
     padding: 10px 0 0;
     position: fixed;
     width: 100%;
     z-index: 100;
+    box-shadow: inset -1px 0 10px rgba(0, 0, 0, 0.9),
+        0 0px 10px 5px rgba(0, 0, 0, 0.5);
 }
 .head-container {
+    content: '';
     position: relative;
     text-align: center;
+    overflow: hidden;
 }
 .head-image {
     height: 700px;
     width: 100%;
     background-image: url("../img/the-door.jpg");
     background-position: center 0px;
+    background-attachment: fixed;
     color: #fff;
     text-align: center;
 }
 #head-content {
     margin-top: 150px;
+    text-shadow: 3px 3px 5px rgba(0,0,0,0.8);
 }
 .empty-block {
     height: 1000px;
 }
+#head-video {
+    position: absolute;
+    bottom: 0;
+    right: 25px;
+}
+#construction {
+    vertical-align: center;
+    text-align: center;
+    h5 {
+        margin: 20px auto 5px;
+    }
+}
 
+//------------
+// Statement
+//------------
+.statement-container {
+    position: relative;
+    height: 300px;
+    width: 100%;
+    padding-top: 50px;
+    text-align: center;
+    background: #fff;
+    overflow: hidden;
+}
+.statement{
+    max-width: 748px;
+    margin: 0 auto;
+    font-size: 20px;
+    h1 {
+        color: #d22;
+    }
+}
+
+
+//------------
+// Pastors
+//------------
+.pastors-container {
+    height: 750px;
+    width: 100%;
+    background:goldenrod;
+    background-image: url("../img/wheat-field-sunset.jpg");
+    background-position: center;
+    
+}
+.pastors-content{
+    text-align: center;
+    color: #fff;
+    margin-top: 100px;
+    opacity: 0;
+}
+
+//--------------------
+// Homepage Message
+//--------------------
+.message-container{
+    background: #fff;
+    height: auto;
+    width: 100%;
+    text-align: center;
+    color: #000;
+}
+
+.message {
+    iframe {
+        max-width: 650px;
+        max-height: 400px;
+    }
+}
 
 //------------
 // Positions
@@ -51,11 +126,27 @@
 .center {
 	text-align: center;
 }
+.right {
+    float: right !important;
+}
 
 
 //------------
 // Body Styles
 //------------
+.container {
+    position: relative;
+    z-index: 2;
+}
+.body-bg {
+    margin-bottom: 350px;
+    position: relative;
+    z-index: 2;
+    background: #fff;
+    padding-bottom: 50px;
+    box-shadow: inset 0 -5px 10px 0px rgba(0,0,0,0.2),
+                    0 -5px 10px 10px rgba(0,0,0,0.5);
+}
 .main-bg {
 	background: #fff;
 }
@@ -156,6 +247,15 @@
 //--------------
 // Footer Styles
 //--------------
+
+.footer-container {
+    height: 350px;
+    width: 100%;
+    background: #ccc;
+    position: fixed;
+    bottom: 0;
+    padding-top: 25px;
+}
 
 .footer {
 	margin-bottom: 25px;

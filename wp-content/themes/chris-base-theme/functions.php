@@ -139,29 +139,7 @@ add_action( 'widgets_init', 'twentyfifteen_widgets_init' );
 
 add_action( 'init', 'create_post_type');
 function create_post_type() {
-	
-	register_post_type( 'event',
-		array(
-			'labels' => array(
-				'name' => __( 'Events' ),
-				'singular_name' => __( 'Events' )
-			),
-			'public' => true,
-			'menu_icon' => 'dashicons-calendar-alt',
-			'has_archive' => true,
-			'map_meta_cap' => true,
-			'hierarchical' => true,
-			'supports' => array(
-				'title',
-				'editor',
-				'thumbnail',
-				'page-attributes',
-				'custom-fields'
-				),
-			'rewrite' => array('slug' => 'event')
-		)
-	);
-	
+    
 	register_post_type( 'slider',
 		array(
 			'labels' => array(
@@ -204,6 +182,51 @@ function create_post_type() {
 				'page-attributes'
 				),
 			'rewrite' => array('slug' => 'messages')
+		)
+	);
+	
+	register_post_type( 'mission_statment',
+		array(
+			'labels' => array(
+				'name' => __( 'Mission Statment' ),
+				'singular_name' => __( 'Statement' )
+			),
+			'public' => true,
+			'menu_icon' => 'dashicons-testimonial',
+			'has_archive' => true,
+			'map_meta_cap' => true,
+			'hierarchical' => true,
+			'supports' => array(
+				'title',
+				'editor',
+				'excerpt',
+				'thumbnail',
+				'custom-fields',
+				'page-attributes'
+				),
+			'rewrite' => array('slug' => 'mission_statement')
+		)
+	);
+	
+	register_post_type( 'event',
+		array(
+			'labels' => array(
+				'name' => __( 'Events' ),
+				'singular_name' => __( 'Events' )
+			),
+			'public' => true,
+			'menu_icon' => 'dashicons-calendar-alt',
+			'has_archive' => true,
+			'map_meta_cap' => true,
+			'hierarchical' => true,
+			'supports' => array(
+				'title',
+				'editor',
+				'thumbnail',
+				'page-attributes',
+				'custom-fields'
+				),
+			'rewrite' => array('slug' => 'event')
 		)
 	);
 

@@ -124,9 +124,9 @@ define('DISALLOW_FILE_EDIT', true);
 	) );
 
 
-function twentyfifteen_widgets_init() {
+function chris_widgets_init() {
 	register_sidebar( array(
-		'name'          => __( 'Widget Area', 'twentyfifteen' ),
+		'name'          => __( 'Widget Area' ),
 		'id'            => 'sidebar-1',
 		'description'   => __( 'Add widgets here to appear in your sidebar.', 'twentyfifteen' ),
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
@@ -135,7 +135,7 @@ function twentyfifteen_widgets_init() {
 		'after_title'   => '</h2>',
 	) );
 }
-add_action( 'widgets_init', 'twentyfifteen_widgets_init' );
+add_action( 'widgets_init', 'chris_widgets_init' );
 
 add_action( 'init', 'create_post_type');
 function create_post_type() {
@@ -162,29 +162,6 @@ function create_post_type() {
 		)
 	);
 	
-	register_post_type( 'messages',
-		array(
-			'labels' => array(
-				'name' => __( 'Messages' ),
-				'singular_name' => __( 'Messages' )
-			),
-			'public' => true,
-			'menu_icon' => 'dashicons-book',
-			'has_archive' => true,
-			'map_meta_cap' => true,
-			'hierarchical' => true,
-			'supports' => array(
-				'title',
-				'editor',
-				'excerpt',
-				'thumbnail',
-				'custom-fields',
-				'page-attributes'
-				),
-			'rewrite' => array('slug' => 'messages')
-		)
-	);
-	
 	register_post_type( 'mission_statment',
 		array(
 			'labels' => array(
@@ -205,6 +182,29 @@ function create_post_type() {
 				'page-attributes'
 				),
 			'rewrite' => array('slug' => 'mission_statement')
+		)
+	);
+	
+	register_post_type( 'messages',
+		array(
+			'labels' => array(
+				'name' => __( 'Messages' ),
+				'singular_name' => __( 'Messages' )
+			),
+			'public' => true,
+			'menu_icon' => 'dashicons-microphone',
+			'has_archive' => true,
+			'map_meta_cap' => true,
+			'hierarchical' => true,
+			'supports' => array(
+				'title',
+				'editor',
+				'excerpt',
+				'thumbnail',
+				'custom-fields',
+				'page-attributes'
+				),
+			'rewrite' => array('slug' => 'messages')
 		)
 	);
 	

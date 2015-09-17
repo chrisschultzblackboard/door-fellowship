@@ -1,0 +1,33 @@
+-
+    /**
+    * The template for displaying pages
+    *
+    * Default template
+    *
+    * @package WordPress
+    *
+    */
+    get_header()
+.body-bg
+    .container
+        .row
+            .col-xs-12
+                -if( have_posts() ) : while ( have_posts() ) : the_post()
+                    .content
+                        article
+                            header
+                                h1.page-title(itemprop="headline")
+                                    - the_title()
+                                section(itemprop="articleBody")
+                                    - if(has_post_thumbnail() ){
+                                        - the_post_thumbnail(array(200,200), array('class'=>'img-thumbail pull-left margin-right'))
+                                    - }
+                                    -the_content()
+| 
+|<?php endwhile; else : ?>
+|Sorry there may be a problem.
+|<?php get_search_form(); ?>
+|<?php endif; ?>
+|<?php wp_reset_query(); ?>
+| 
+|<?php get_footer(); ?>

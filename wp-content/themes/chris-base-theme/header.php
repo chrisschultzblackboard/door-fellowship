@@ -14,6 +14,8 @@
   <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
   <!-- Sheet Styles-->
   <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_directory'); ?>/css/bootstrap.css">
+  <!-- Google Fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
   <!--JavaScript-->
   <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/functions.js"></script>
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
@@ -40,25 +42,23 @@
       <div class="container">
         <div class="row">
           <div id="logo" class="col-xs-5 col-sm-5 col-md-4 col-lg-4"><a href="<?php echo get_option('home'); ?>" alt="<?php the_title(); ?>" class="main-logo"> <img src="<?php bloginfo('template_url'); ?>/img/logo.png"></a></div>
-          <div id="construction" class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-            <h5>Site Under Construction. More features to come.</h5>
+          <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+            <div class="navbar navbar-default">
+              <nav role="navigation" class="navigation navbar navbar-default">
+                <div class="navbar-header">
+                  <button type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" class="navbar-toggle"><span class="sr-only">Toggle navigation</span><span>Menu</span></button>
+                </div>
+                <div id="bs-example-navbar-collapse-1" class="collapse navbar-collapse"><?php wp_nav_menu( array(
+'theme_location' => 'Main Menu',
+'depth'=> 3,
+'container'=> false,
+'menu_class' => 'nav navbar-nav',
+'fallback_cb'    => '__return_false')
+); ?>
+                </div>
+              </nav>
+            </div>
           </div>
-          <!--
-          .navbar.navbar-default
-              nav(role="navigation").navigation.navbar.navbar-default
-                  div.navbar-header
-                      button (type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1").navbar-toggle
-                          span.sr-only Toggle navigation
-                          span Menu
-                  div.collapse.navbar-collapse#bs-example-navbar-collapse-1
-                      -   wp_nav_menu( array(
-                          -'theme_location' => 'Main Menu',
-                          -'depth'=> 3,
-                          -'container'=> false,
-                          -'menu_class' => 'nav navbar-nav',
-                          -'fallback_cb'    => '__return_false')
-                          -);
-          -->
         </div>
       </div>
     </div>

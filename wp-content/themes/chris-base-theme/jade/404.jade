@@ -1,0 +1,19 @@
+-
+    /*
+    *
+    * The template for displaying 404 pages (not found)
+    *
+    */
+    get_header();
+#primary.content-area
+    main#main.site-main(role="main")
+        .container
+            section.error-404.not-found
+                header.page-header
+                    h1.page-title
+                        - _e( 'You look your are lost?');
+                    .page-content
+                        p
+                            -_e( 'May I suggest using the search to find what you are looking for?');
+                        - get_search_form();
+- get_footer();

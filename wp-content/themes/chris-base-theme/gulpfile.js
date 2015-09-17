@@ -50,10 +50,9 @@ gulp.task('scripts', function(){
 // Watch Files For Changes
 gulp.task('watch', function(){
     gulp.watch('jade/*.jade', ['jades']);
-    gulp.watch('js/*.js', ['lint', 'scripts']);
     gulp.watch('css/*.sass', ['sass']);
     gulp.watch('css/**/*.sass', ['sass']);
 });
 
 //Default Task
-gulp.task('default', ['lint', 'sass', 'scripts', 'jades', 'watch']);
+gulp.task('run', ['sass', 'jades', 'watch']);

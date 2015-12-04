@@ -2829,7 +2829,7 @@ select[multiple].input-lg, .input-group-lg > select[multiple].form-control,
   padding: 6px 12px;
   font-size: 16px;
   line-height: 1.42857;
-  border-radius: 4px;
+  border-radius: 0;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -3280,57 +3280,140 @@ input[type="reset"].btn-block,
 input[type="button"].btn-block {
   width: 100%; }
 
-.main-logo img {
+.transition {
+  transition: all 0.5s eas-in-out; }
+
+.auto-height {
+  width: 100%; }
+
+.main-logo svg {
+  padding-left: 20px;
   position: relative;
-  margin: 0 0 10px;
-  width: 300px;
   height: auto;
-  float: left; }
+  float: left;
+  width: 225px;
+  margin: 5px 0 15px;
+  -webkit-transition: all 0.5s eas-in-out;
+  -moz-transition: all 0.5s eas-in-out;
+  transition: all 0.5s eas-in-out;
+  fill: #dddddd; }
+  .main-logo svg .active {
+    width: 150px;
+    margin: 5px 0 10px; }
 
 .underline {
   border-bottom: 1px solid #000; }
 
 .navigation {
   position: fixed;
-  background: #fff;
+  background: transparent;
   padding: 10px 0 0;
   width: 100%;
-  z-index: 100; }
+  z-index: 100;
+  border-bottom: 0;
+  background: rgba(0, 0, 0, 0.4); }
+
+.pull-out {
+  -webkit-transistion: all 1s ease;
+  -moz-transistion: all 1s ease;
+  transistion: all 1s ease;
+  box-sizing: box-border;
+  background: white; }
+  .pull-out .main-logo svg {
+    fill: #000; }
+  .pull-out #sidenav-btn .btn-text {
+    color: #000; }
+  .pull-out #sidenav-btn i.fa {
+    color: #000; }
 
 .head-container {
   content: '';
+  height: 730px;
+  width: 100%;
   position: relative;
   text-align: center;
   overflow: hidden; }
   .head-container h1 {
-    font-size: 65px;
-    font-family: 'Montserrat', sans-serif; }
+    font-size: 75px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    padding: 0 0 20px;
+    -webkit-transition: 1.5s ease-in-out;
+    -moz-transition: 1.5s ease-in-out;
+    transition: 1.5s ease-in-out; }
+
+.head {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: black;
+  opacity: 0.5; }
 
 .head-image {
-  height: 600px;
+  height: 100%;
   width: 100%;
   background-image: url("../img/the-door.jpg");
-  background-position: center top;
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   color: #fff;
   text-align: center; }
 
 #head-content {
-  margin-top: 150px;
-  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.8); }
+  display: none;
+  position: relative;
+  margin-top: 20%;
+  text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
+  content-align: center; }
+  #head-content .btn-head1, #head-content .btn-head2 {
+    font-size: 18px;
+    letter-spacing: 2px;
+    -webkit-transition: all 0.5s ease 0.2s;
+    -moz-transition: all 0.5s ease 0.2s;
+    transition: all 0.5s ease 0.2s;
+    background: transparent;
+    width: 250px;
+    height: 45px; }
+    #head-content .btn-head1:hover, #head-content .btn-head2:hover {
+      background: #fff;
+      color: #333; }
+  #head-content .btn-head1 {
+    background: #FFF;
+    color: #333; }
+    #head-content .btn-head1:hover {
+      background: #333;
+      color: #FFF; }
+  #head-content .hp-btns {
+    position: relative;
+    list-style: none;
+    float: left;
+    width: 100%;
+    padding: 0; }
+    #head-content .hp-btns li {
+      display: inline-block; }
+      #head-content .hp-btns li:first-child {
+        margin-right: 50px; }
+  #head-content #rndm-word {
+    color: #fff; }
 
 .empty-block {
   height: 1000px; }
 
-#head-video {
+#down-arrow {
+  display: none;
+  width: 100%;
   position: absolute;
-  bottom: 0;
-  right: 25px; }
-
-#construction {
-  vertical-align: center;
-  text-align: center; }
-  #construction h5 {
-    margin: 20px auto 5px; }
+  bottom: 20px;
+  font-size: 40px;
+  margin: 0 auto;
+  cursor: pointer;
+  animation: bounce 1.5s linear forwards infinite; }
+  #down-arrow a {
+    color: rgba(255, 255, 255, 0.8); }
 
 .statement-container {
   position: relative;
@@ -3346,30 +3429,41 @@ input[type="button"].btn-block {
   margin: 0 auto;
   font-size: 20px; }
   .statement h1 {
-    color: #d22; }
+    color: #901616; }
 
 .pastors-container {
-  height: 750px;
   width: 100%;
   background: goldenrod;
   background-image: url("../img/wheat-field-sunset.jpg");
-  background-position: center; }
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
 
 .pastors-content {
   text-align: center;
   color: #fff;
   margin-top: 100px; }
 
-.message-container {
+.blocks-container {
   background: #fff;
   height: auto;
   width: 100%;
   text-align: center;
   color: #000; }
-
-.message iframe {
-  max-width: 650px;
-  max-height: 400px; }
+  .blocks-container .home-grp-block {
+    content: '';
+    display: inline-block;
+    height: 400px;
+    width: 400px;
+    background-image: url("../img/df-hgpg.jpg");
+    background-size: cover; }
+    .blocks-container .home-grp-block .overlay {
+      content: '';
+      height: 100%;
+      width: 100%;
+      background-color: rgba(30, 100, 255, 0.6); }
 
 .center {
   text-align: center; }
@@ -3387,11 +3481,12 @@ input[type="button"].btn-block {
   background: #fff;
   padding-bottom: 50px;
   margin-bottom: 350px;
-  border-bottom: 1px solid #888;
-  box-sizing: border-box;
-  box-shadow: 0px 5px 10px 5px rgba(0, 0, 0, 0.5), inset 0px -5px 2px rgba(0, 0, 0, 0.5); }
+  border-bottom: 1px solid #888; }
 
 .main-bg {
+  position: relative;
+  overflow-x: hidden;
+  right: 0;
   background: #fff; }
 
 .clear-container {
@@ -3405,10 +3500,8 @@ input[type="button"].btn-block {
     margin-top: 0px; }
 
 .home-content {
-  border: 1px solid #2b3f53;
-  background: #ccc;
-  color: #333;
-  padding: 25px 30px; }
+  height: auto;
+  width: 100%; }
 
 .home-service {
   padding: 15px 0;
@@ -3420,6 +3513,12 @@ input[type="button"].btn-block {
 .dailyVersesWrapper a {
   color: #000;
   font-weight: bold; }
+
+.btn {
+  color: rgba(255, 255, 255, 0.7);
+  -webkit-transition: all 0.5s eas-in-out;
+  -ms-transition: all 0.5s eas-in-out;
+  transition: all 0.5s eas-in-out; }
 
 .btn-directions {
   margin: 8px 0;
@@ -3490,6 +3589,224 @@ input[type="button"].btn-block {
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
   -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
   width: 200px; }
+
+@keyframes bgColor {
+  from {
+    background: rgba(0, 0, 0, 0.4); }
+  to {
+    background: white; } }
+
+@keyframes bgColor2 {
+  from {
+    background: rgba(0, 0, 0, 0.4); }
+  to {
+    background: white; } }
+
+@keyframes shrink-logo {
+  from {
+    width: 225px;
+    margin: 5px 0 15px; }
+  to {
+    width: 150px;
+    margin: 5px 0 10px; } }
+
+@keyframes shrink-menu {
+  from {
+    margin: 20px 30px 0;
+    font-size: 18px; }
+  to {
+    margin: 10px 30px 0;
+    font-size: 16px; } }
+
+@keyframes grow-logo {
+  from {
+    width: 150px;
+    margin: 5px 0 10px; }
+  to {
+    width: 225px;
+    margin: 5px 0 15px; } }
+
+@keyframes grow-menu {
+  from {
+    margin: 10px 30px 0;
+    font-size: 16px; }
+  to {
+    margin: 20px 30px 0;
+    font-size: 18px; } }
+
+@keyframes bounce {
+  0% {
+    bottom: 20px; }
+  35% {
+    bottom: 0px; }
+  50% {
+    bottom: 10px; }
+  65% {
+    bottom: 0px; }
+  100% {
+    bottom: 20px; } }
+
+@media screen and (max-width: 720px) {
+  #head-content .hp-btns li {
+    display: block;
+    margin-bottom: 15px; }
+    #head-content .hp-btns li:first-child {
+      margin-right: 0; }
+  #main-logo img {
+    width: 200px; }
+  #head-content {
+    margin-top: 25%; }
+  .head-container h1 {
+    font-size: 50px; } }
+
+@media screen and (max-width: 580px) {
+  .head-container h1 {
+    font-size: 40px; } }
+
+/* Styling */
+.nav-content {
+  padding: 35px 15px 10px;
+  color: #ddd; }
+
+.nav-head iframe {
+  width: 100%;
+  height: 150px; }
+
+/* Side Nav Functionality */
+.float-right {
+  float: right; }
+
+#sidenav-btn {
+  color: #eee;
+  position: relative;
+  float: right;
+  padding: 3px 0;
+  margin: 20px 30px;
+  font-size: 18px;
+  cursor: pointer; }
+  #sidenav-btn .btn-text {
+    position: relative;
+    bottom: 2px;
+    display: inline-block;
+    padding: 0 0 10px; }
+
+.fa.fa-bars {
+  font-size: 25px; }
+
+.fa-bars {
+  padding-left: 10px; }
+
+#sidenav {
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  right: -300px;
+  width: 300px;
+  height: 100%;
+  overflow: scroll;
+  z-index: 1000;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  transition: all 0.5s ease; }
+
+.sidenav-menu {
+  color: #ddd;
+  list-style: none;
+  padding: 0 10px; }
+  .sidenav-menu li {
+    padding: 5px 0; }
+    .sidenav-menu li a {
+      position: relative;
+      color: #fff;
+      text-decoration: none;
+      opacity: 0.5;
+      -webkit-transition: all 0.5s ease-in-out;
+      -moz-transition: all 0.5s ease-in-out;
+      transition: all 0.5s ease-in-out; }
+      .sidenav-menu li a:hover {
+        opacity: 1; }
+      .sidenav-menu li a .btn-text {
+        position: relative;
+        top: 2px; }
+      .sidenav-menu li a svg {
+        opacity: 0.9; }
+
+#sidenav.open {
+  right: 0;
+  box-shadow: 0 0 10px 6px rgba(0, 0, 0, 0.5); }
+
+#close-nav {
+  position: absolute;
+  font-size: 25px;
+  cursor: pointer;
+  right: 15px;
+  height: 30px;
+  width: 30px;
+  top: 0px;
+  color: #ddd;
+  -ms-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out; }
+
+#x-close {
+  height: 30px;
+  width: 30px;
+  padding: 5px; }
+
+.x-close {
+  fill: #777;
+  stroke: #fff;
+  stroke-width: 4;
+  stroke-dasharray: 132;
+  stroke-dashoffset: 132;
+  opacity: 0; }
+
+@keyframes pullInX {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(180deg); } }
+
+@keyframes buildx {
+  from {
+    stroke-dashoffset: 132; }
+  to {
+    stroke-dashoffset: 0; } }
+
+@keyframes fill {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 0.7; } }
+
+#home-svg, #sermon-svg, #devotion-svg {
+  fill: #fff;
+  stroke: transparent;
+  display: inline-block;
+  position: relative;
+  height: 25px;
+  width: 25px;
+  top: -2px;
+  float: left; }
+
+#sermon-svg {
+  height: 30px;
+  width: 30px;
+  left: 2px;
+  margin-left: -4px;
+  top: -4px; }
+
+.main-bg {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  transition: all 0.5s ease; }
+
+.main-bg.body-push-left {
+  right: 300px; }
+
+@media screen and (max-width: 720px) {
+  #sidenav-btn .btn-text {
+    display: none; } }
 
 .fade {
   opacity: 0;
@@ -3788,12 +4105,12 @@ tbody.collapse.in {
   border-radius: 0; }
 
 .btn-group-vertical > .btn:first-child:not(:last-child) {
-  border-top-right-radius: 4px;
+  border-top-right-radius: 0;
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0; }
 
 .btn-group-vertical > .btn:last-child:not(:first-child) {
-  border-bottom-left-radius: 4px;
+  border-bottom-left-radius: 0;
   border-top-right-radius: 0;
   border-top-left-radius: 0; }
 

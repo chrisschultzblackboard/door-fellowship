@@ -185,11 +185,11 @@ function create_post_type() {
 		)
 	);
 	
-	register_post_type( 'messages',
+	register_post_type( 'sermons',
 		array(
 			'labels' => array(
-				'name' => __( 'Messages' ),
-				'singular_name' => __( 'Messages' )
+				'name' => __( 'Sermons' ),
+				'singular_name' => __( 'Sermons' )
 			),
 			'public' => true,
 			'menu_icon' => 'dashicons-microphone',
@@ -204,7 +204,7 @@ function create_post_type() {
 				'custom-fields',
 				'page-attributes'
 				),
-			'rewrite' => array('slug' => 'messages')
+			'rewrite' => array('slug' => 'sermons')
 		)
 	);
 	

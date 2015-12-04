@@ -1,0 +1,40 @@
+﻿/* @group Column Classes */
+/* Only used for display in SiteManager */
+div.ui-column-whole {
+	display: inline;
+	width: 100%;
+}
+
+div.ui-column-one-third {
+	display: inline;
+	width: 30%;
+	float: left;
+}
+
+div.ui-column-one-half {
+	display: inline;
+	width: 46%;
+	float: left;
+}
+
+div.ui-column-two-thirds {
+	display: inline;
+	width: 60%;
+	float: left;
+}
+
+div.ui-column-one-quarter {
+	float: left;
+	width: 21%;
+}
+
+div.ui-column-three-quarters {
+	float: left;
+	width: 75%;
+}
+
+/* @end */
+
+div.ui-canvas {
+	
+}

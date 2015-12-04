@@ -1,0 +1,157 @@
+$width: 300px
+$color: #ddd
+$background: #333
+$transition: all 0.5s ease
+
+/* Styling */
+
+.nav-content
+    padding: 35px 15px 10px
+    color: $color
+.nav-head
+    iframe
+        width: 100%
+        height: 150px
+
+
+
+/* Side Nav Functionality */
+
+.float-right
+    float: right
+
+#sidenav-btn
+    color: #eee
+    position: relative
+    float: right
+    padding: 3px 0
+    margin: 20px 30px
+    font-size: 18px
+    cursor: pointer
+    .btn-text
+        position: relative
+        bottom: 2px
+        display: inline-block
+        padding: 0 0 10px
+    
+.fa.fa-bars
+    font-size: 25px
+.fa-bars
+    padding-left: 10px
+
+#sidenav
+    background-color: $background
+    position: fixed
+    top: 0
+    right: -$width
+    width: $width
+    height: 100%
+    overflow: scroll
+    z-index: 1000
+    -webkit-transition: $transition
+    -moz-transition: $transition
+    transition: $transition
+
+
+.sidenav-menu
+    color: #ddd
+    list-style: none
+    padding: 0 10px
+    li 
+        padding: 5px 0
+        a
+            position: relative
+            color: #fff
+            text-decoration: none
+            opacity: 0.5
+            -webkit-transition: all .5s ease-in-out
+            -moz-transition: all .5s ease-in-out
+            transition: all .5s ease-in-out
+            &:hover
+                opacity: 1
+            .btn-text
+                position: relative
+                top: 2px
+            svg
+                opacity: 0.9
+        
+#sidenav.open 
+    right: 0
+    box-shadow: 0 0 10px 6px rgba(0,0,0,0.5)
+    
+#close-nav
+    position: absolute
+    font-size: 25px
+    cursor: pointer
+    right: 15px
+    height: 30px
+    width: 30px
+    top: 0px
+    color: $color
+    -ms-transition: all .5s ease-in-out
+    -webkit-transition: all .5s ease-in-out
+    transition: all .5s ease-in-out
+
+#x-close
+    height: 30px
+    width: 30px
+    padding: 5px
+
+.x-close
+    fill: #777
+    stroke: #fff
+    stroke-width: 4
+    stroke-dasharray: 132
+    stroke-dashoffset: 132
+    opacity:0
+
+@keyframes pullInX
+    from
+        transform: rotate(0deg)
+    to
+        transform: rotate(180deg)
+@keyframes buildx
+    from
+        stroke-dashoffset: 132
+    to
+        stroke-dashoffset: 0
+@keyframes fill
+    from
+        opacity: 0
+    to
+        opacity: 0.7
+
+//---------------------
+// SVG Styles
+//---------------------
+
+#home-svg, #sermon-svg, #devotion-svg
+    fill: #fff
+    stroke: transparent
+    display: inline-block
+    position: relative
+    height: 25px
+    width: 25px
+    top: -2px
+    float: left
+#sermon-svg
+    height: 30px
+    width: 30px
+    left: 2px
+    margin-left: -4px
+    top: -4px
+.main-bg
+    -webkit-transition: $transition
+    -moz-transition: $transition
+    transition: $transition
+    
+.main-bg.body-push-left
+    right: $width
+    
+//----------------------
+//Media Queries
+//----------------------
+@media screen and (max-width: 720px)
+    #sidenav-btn
+        .btn-text 
+            display: none

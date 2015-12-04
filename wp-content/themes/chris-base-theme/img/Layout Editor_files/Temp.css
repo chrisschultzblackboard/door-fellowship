@@ -1,0 +1,281 @@
+﻿.ui-dropdown-current {
+    text-align: left;
+}
+
+
+        /*div#sw-centricity-bar {
+            width: 961px;
+            height: 65px;
+            margin: auto;
+            background: transparent url('../../cms/Assets/Images/centricity-bar-background.png') no-repeat;
+            margin-top: 5px;
+        }*/
+        
+
+/* SIDE LINKS ON MASTER PAGES */
+/*
+a#channel-section-link { /* channel link 
+    background: url('../../cms/Assets/Images/channel-button.png') no-repeat;
+    height: 26px;
+    width: 205px;
+    position: relative;
+    display: inline-block;
+    margin-left: 445px;
+}
+
+a#favorites-link { /* favorites link 
+    background: url('../../cms/Assets/Images/favorites-button.png') no-repeat;
+    height: 100px;
+}
+
+a#admin-section-link { /* admin sections 
+    background: url('../../cms/Assets/Images/admin-button.png') no-repeat;
+    height: 114px;
+}
+
+div.ui-side-link-overlay { /* panel 
+    background: #E8E3D3;
+    -moz-border-radius: 5px;
+	border: 2px solid #DBD4BB;
+	padding: 5px;
+	position: absolute;
+	background-color: #ffffff;
+	display: none;
+	z-index: 2000;
+}
+
+div.ui-side-link-overlay div.ui-widget-header { /* header bar in panel 
+    background: #F9F7F2;
+}
+    
+    div.ui-side-link-overlay div.ui-widget-header h1 { /* heading 
+        text-transform: none;
+    }
+    
+div.ui-side-link-overlay div.ui-widget { /* widget in panel 
+    padding: 0;
+    margin: 0px;
+}
+
+div.ui-side-link-overlay ul li {
+	cursor: pointer;
+	padding: 5px;
+	font-size: 13px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+div.ui-side-link-overlay ul li.active {
+/* currently selected item 
+    background-color: #ccc;
+}
+
+    
+
+div.ui-side-link-overlay ul li:hover {
+	background-color: #4e8f00;
+	color: White;
+	text-decoration: none;
+}
+
+div.ui-side-link-overlay ul li:hover a {
+	color: White;
+	text-decoration: none;
+	font-size: 13px;
+	display: block;
+}
+*/
+
+
+/* END SIDE LINKS ON MASTER PAGES */
+
+    
+    
+    
+    /* ADMIN SECTIONS-SPECIFIC WIDGET CLASSES */
+    
+    /*div#admin-section-overlay {
+        width: 350px;
+    }*/
+        
+    /* ENDADMIN SECTIONS-SPECIFIC WIDGET CLASSES */
+
+
+
+
+
+/* NEW EDIT SCREEN LAYOUT */
+/*div#widget-hide {
+    display: none;
+}
+div#widget-display table {
+    width: 100%;
+}
+div#widget-display table td {
+    vertical-align: top;
+}
+div#widget-display td.colone {
+    padding: 10px;
+    padding-right: 20px;
+    border-right: 1px solid #F5F3EC;
+}
+div#widget-display td.coltwo {
+    padding-left: 20px;
+    width: 100%; 
+}
+div#widget-display td.colthree {
+    padding: 10px;
+    text-align: right; 
+}*/
+/* END NEW EDIT SCREEN LAYOUT */
+
+.grid-heading {
+	background-image: url('../../../../GlobalAssets/Images/gridheading.gif');
+	background-repeat: repeat-x;
+	height:25px;
+	margin-top:10px;
+	border-style:none !important;
+}
+.grid-heading td 
+{
+	padding: 3px 0px 0 5px;
+	border-style: inset !important;
+	border-width:1px !important;
+	border-color: #B8B8B8 !important;
+}
+
+.grid-row-even
+{
+	border-left: solid 1px #C8C8C8 !important;
+	border-right: solid 1px #C8C8C8 !important;
+	height:20px !important;
+}
+
+.grid-row-even td
+{
+	padding: 3px 0px 0 5px !important;
+	vertical-align:middle !important;
+}
+
+.grid-row-odd
+{
+	border-left: solid 1px #C8C8C8 !important;
+	border-right: solid 1px #C8C8C8 !important;
+	background-color: #F0F0F0 !important;
+}
+
+.grid-row-odd td
+{
+	padding: 3px 0px 0 5px !important;
+	vertical-align:middle !important;
+}
+
+
+
+/* END APP EDIT/OPTIONS FORMATTING */
+
+
+
+
+/*#PageOverlay {
+    width: 892px;
+}
+
+#PageOverlay .ui-dialog-overlay-close {
+    right: 90px;
+    top: 35px;
+}
+
+#dialog-overlay-PageOverlay-base {
+    left: 20%;
+}
+
+#PageOverlay .ui-dialog-overlay-title-bar {
+    background: url('../../cms/Assets/Images/pageedit-overlay-header.png') no-repeat;
+    height: 85px;
+    padding: 0;
+}
+    
+#PageOverlay .ui-dialog-overlay-body {
+    background: url('../../cms/Assets/Images/pageedit-overlay-detail.png') repeat-y;
+    padding: 0;
+}
+
+#PageOverlay .ui-dialog-overlay-footer {
+    background: url('../../cms/Assets/Images/pageedit-overlay-footer.png') no-repeat;
+    height: 50px;
+    padding: 0;
+}
+
+.page-overlay p.ui-description {
+    margin: 0 0 0 37px;
+    width: 790px;
+    padding: 8px;
+}
+
+#PageOverlay .ui-dialog-overlay-body>.ui-widget {
+    background: transparent;
+}
+
+#PageOverlay .ui-dialog-overlay-body>.ui-widget>.ui-widget-header h1 {
+    position: absolute;
+    margin: -30px 0 0 20px;
+    background: transparent;
+}
+
+#PageOverlay .ui-dialog-overlay-body>.ui-widget>.ui-widget-header .ui-description {
+    margin-left: 20px;
+}
+
+#PageOverlay .ui-dialog-overlay-body>.ui-widget>.ui-widget-header {
+    background: transparent;
+    margin-top: -10px;
+}
+
+#PageOverlay .ui-dialog-overlay-body>.ui-widget>.ui-widget-detail {
+    background: transparent;
+    margin: -10px 20px 0 15px;
+}
+
+#PageOverlay .ui-dialog-overlay-body>.ui-widget>.ui-widget-footer {
+    background: transparent;
+    margin: 0 0 0 20px;
+}
+
+#PageOverlay .rich-select li {
+    background: #fff;
+    border: 1px solid #E1D6C1;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    padding: 4px;
+    width: 200px;
+    height: 50px;
+    overflow: hidden;
+}
+
+#PageOverlay .rich-select h1 {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+#PageOverlay .rich-select h2 {
+    color: Gray;
+    font-size: 10px;
+    font-weight: normal;
+}
+
+#PageOverlay .rich-select li img {
+    float: left;
+    margin-right: 5px;
+}
+
+#PageOverlay .rich-select li.selected {
+    background: #E4CEA6;
+}
+
+.ui-pnl-pageoverlay {
+    background: #F8F3E2;
+    overflow: hidden;
+    padding: 5px;
+}*/
+

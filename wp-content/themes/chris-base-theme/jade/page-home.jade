@@ -5,44 +5,45 @@
     get_header();
 .body-bg
     .head-container
+        .head.filter
         .head-image
+            #down-arrow
+                i.fa.fa-arrow-down
             .container
                 .row
                     #head-content.col-xs-12
-                        h1 Welcome
+                        h1#rndm-word
+                        ul.hp-btns
+                            li
+                                button.btn.btn-default.btn-head1 Sermons
+                            li
+                                button.btn.btn-default.btn-head2 Learn More
+        .head-filter
     .statement-container
         .container
             .row
                 .statement
-                    h1 Our Statement of Faith
-                    p We believe the Bible is the eternal, inspired Word of God - the final authority that will judge us on the Last Day. <br/>2 Timothy 3:16-17, John 12:48
-    .pastors-container
+                    h1 Welcome to The Door Fellowship
+                    p The Door Fellowship Church extends to all guests and visitors a warm welcome in Jesus' name. Our hope is that the Lord will meet your needs today, and that His joy and peace will go with you.
+    .pastors-container.auto-height
         .pastors
             .container
                 .row
                     .pastors-content.col-xs-6.right
-                        h1 Pastors Wayne & Margarret Holcomb
+                        h3.pastor-text Pastors<br>Wayne & Margarett<br>Holcomb 
                         p. 
                             Et magna distinguantur, voluptate dolor laboris mentitum sed est velit 
                             efflorescere a aliqua occaecat probant. Multos probant ne dolor nisi non aut 
-                            dolor nescius sempiternum. Cernantur qui legam vidisse. Quae sed ita nisi 
-                            tempor, velit aliquip efflorescere nam nam e noster quem irure qui sunt doctrina 
-                            admodum, incididunt ubi culpa mentitum ex ingeniis dolore enim excepteur velit, 
-                            amet ut ita duis quamquam do o duis excepteur.
-    .message-container
+                            dolor nescius sempiternum. 
+    .blocks-container
         .container
             .row
-                .message
-                    -$args = array('post_type' => 'messages', 'posts_per_page' => 1 );
-                    -$loop = new WP_Query( $args );
-                    -if( $loop->have_posts() ) : while ( $loop->have_posts() ) : $loop->the_post();
-                        h2
-                            - the_title();
-                        - the_content();
-                    - endwhile; else :
-                        p
-                            -_e( 'Sorry, no posts matched your criteria.' );
-                    - endif;
+                .col-xs-12.block
+                    .home-grp-block
+                        .overlay
+                    .missions-block
+                    .get-connected-block
+        
         .container
             .row
                 .col-xs-12

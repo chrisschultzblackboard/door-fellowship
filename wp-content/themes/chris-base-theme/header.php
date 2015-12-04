@@ -14,12 +14,13 @@
   <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
   <!-- Sheet Styles-->
   <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_directory'); ?>/css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_directory'); ?>/css/font-awesome.min.css">
   <!-- Google Fonts-->
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
   <!--JavaScript-->
-  <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/functions.js"></script>
-  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script> 
+  <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/jquery.js"></script>
+  <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/functions.js"></script> 
   <?php wp_head(); ?>
   <!--
   [if lt IE 9]
@@ -38,28 +39,41 @@
 <body class="main-bg">
 <div id="top" class="hfeed site">
   <header role="banner">
-    <div class="navigation">
-      <div class="container">
-        <div class="row">
-          <div id="logo" class="col-xs-5 col-sm-5 col-md-4 col-lg-4"><a href="<?php echo get_option('home'); ?>" alt="<?php the_title(); ?>" class="main-logo"> <img src="<?php bloginfo('template_url'); ?>/img/logo.png"></a></div>
-          <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
-            <div class="navbar navbar-default">
-              <nav role="navigation" class="navigation navbar navbar-default">
-                <div class="navbar-header">
-                  <button type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" class="navbar-toggle"><span class="sr-only">Toggle navigation</span><span>Menu</span></button>
-                </div>
-                <div id="bs-example-navbar-collapse-1" class="collapse navbar-collapse"><?php wp_nav_menu( array(
-'theme_location' => 'Main Menu',
-'depth'=> 3,
-'container'=> false,
-'menu_class' => 'nav navbar-nav',
-'fallback_cb'    => '__return_false')
-); ?>
-                </div>
-              </nav>
-            </div>
+    <div class="navigation transition">
+      <div class="row">
+        <div id="logo" class="col-xs-5 col-sm-5 col-md-4 col-lg-4"><a href="<?php echo get_option('home'); ?>" alt="<?php the_title(); ?>" class="main-logo"></a></div>
+        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 float-right">
+          <div id="sidenav-btn"> 
+            <div class="btn-text">Menu</div><i class="fa fa-bars"></i>
           </div>
         </div>
+        <nav id="sidenav">
+          <div class="nav-content">
+            <div class="row">
+              <div class="col-xs-12 nav-head">
+                <div id="close-nav">
+                  <svg version="1.1" id="x-close" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 30 30" style="enable-background:new 0 0 30 30;" xml:space="preserve" class="transition">
+                    <path d="M28.4,23.9l-8.2-8.8l8.2-8.8c0.9-1,0.9-2.6-0.1-3.5l-1.4-1.3c-1-0.9-2.6-0.9-3.5,0.1l-7.8,8.4L7.7,1.7c-0.9-1-2.5-1.1-3.5-0.1L2.8,2.9c-1,0.9-1.1,2.5-0.1,3.5l8.2,8.8l-8.2,8.8c-0.9,1-0.9,2.6,0.1,3.5l1.4,1.3c1,0.9,2.6,0.9,3.5-0.1 l7.8-8.4l7.8,8.4c0.9,1,2.5,1.1,3.5,0.1l1.4-1.3C29.3,26.5,29.3,24.9,28.4,23.9z" class="x-close"></path><span class="hidden">Close Nav</span>
+                  </svg>
+                </div>
+                <h5>Most Recent Sermon</h5><?php $args = array('post_type' => 'sermons', 'posts_per_page' => 1 ); ?><?php $loop = new WP_Query( $args ); ?><?php if( $loop->have_posts() ) : while ( $loop->have_posts() ) : $loop->the_post(); ?>
+                <h6><?php the_title(); ?>
+                </h6><?php the_content(); ?><?php endwhile; else : ?>
+                <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?>
+                </p><?php endif; ?>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-12"></div><?php wp_nav_menu( array(
+'theme_location' => 'Main Menu',
+'depth'=> 2,
+'container'=> false,
+'menu_class' => 'sidenav-menu sidenavbar-nav',
+'fallback_cb'    => '__return_false')
+); ?>
+            </div>
+          </div>
+        </nav>
       </div>
     </div>
   </header>

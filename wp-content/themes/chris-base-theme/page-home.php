@@ -4,53 +4,62 @@
 get_header(); ?>
 <div class="body-bg">
   <div class="head-container">
+    <div class="head filter"></div>
     <div class="head-image">
+      <div id="down-arrow"><i class="fa fa-arrow-down"></i></div>
       <div class="container">
         <div class="row">
           <div id="head-content" class="col-xs-12">
-            <h1>Welcome</h1>
+            <h1 id="rndm-word"></h1>
+            <ul class="hp-btns">
+              <li>
+                <button class="btn btn-default btn-head1">Sermons</button>
+              </li>
+              <li>
+                <button class="btn btn-default btn-head2">Learn More</button>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
     </div>
+    <div class="head-filter"></div>
   </div>
   <div class="statement-container">
     <div class="container">
       <div class="row">
         <div class="statement">
-          <h1>Our Statement of Faith</h1>
-          <p>We believe the Bible is the eternal, inspired Word of God - the final authority that will judge us on the Last Day. <br/>2 Timothy 3:16-17, John 12:48</p>
+          <h1>Welcome to The Door Fellowship</h1>
+          <p>The Door Fellowship Church extends to all guests and visitors a warm welcome in Jesus' name. Our hope is that the Lord will meet your needs today, and that His joy and peace will go with you.</p>
         </div>
       </div>
     </div>
   </div>
-  <div class="pastors-container">
+  <div class="pastors-container auto-height">
     <div class="pastors">
       <div class="container">
         <div class="row">
           <div class="pastors-content col-xs-6 right">
-            <h1>Pastors Wayne & Margarret Holcomb</h1>
+            <h3 class="pastor-text">Pastors<br>Wayne & Margarett<br>Holcomb </h3>
             <p>
               Et magna distinguantur, voluptate dolor laboris mentitum sed est velit 
               efflorescere a aliqua occaecat probant. Multos probant ne dolor nisi non aut 
-              dolor nescius sempiternum. Cernantur qui legam vidisse. Quae sed ita nisi 
-              tempor, velit aliquip efflorescere nam nam e noster quem irure qui sunt doctrina 
-              admodum, incididunt ubi culpa mentitum ex ingeniis dolore enim excepteur velit, 
-              amet ut ita duis quamquam do o duis excepteur.
+              dolor nescius sempiternum. 
             </p>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <div class="message-container">
+  <div class="blocks-container">
     <div class="container">
       <div class="row">
-        <div class="message"><?php $args = array('post_type' => 'messages', 'posts_per_page' => 1 ); ?><?php $loop = new WP_Query( $args ); ?><?php if( $loop->have_posts() ) : while ( $loop->have_posts() ) : $loop->the_post(); ?>
-          <h2><?php the_title(); ?>
-          </h2><?php the_content(); ?><?php endwhile; else : ?>
-          <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?>
-          </p><?php endif; ?>
+        <div class="col-xs-12 block">
+          <div class="home-grp-block">
+            <div class="overlay"></div>
+          </div>
+          <div class="missions-block"></div>
+          <div class="get-connected-block"></div>
         </div>
       </div>
     </div>

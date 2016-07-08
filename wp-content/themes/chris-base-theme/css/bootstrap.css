@@ -3349,7 +3349,9 @@ input[type="button"].btn-block {
   height: 100%;
   position: absolute;
   background: black;
-  opacity: 0.5; }
+  opacity: 0.5;
+  top: 0;
+  left: 0; }
 
 .head-image {
   height: 100%;
@@ -3411,6 +3413,7 @@ input[type="button"].btn-block {
   font-size: 40px;
   margin: 0 auto;
   cursor: pointer;
+  z-index: 2;
   animation: bounce 1.5s linear forwards infinite; }
   #down-arrow a {
     color: rgba(255, 255, 255, 0.8); }
@@ -3784,17 +3787,10 @@ input[type="button"].btn-block {
   stroke: transparent;
   display: inline-block;
   position: relative;
-  height: 25px;
-  width: 25px;
-  top: -2px;
-  float: left; }
-
-#sermon-svg {
   height: 30px;
-  width: 30px;
-  left: 2px;
-  margin-left: -4px;
-  top: -4px; }
+  width: 40px;
+  top: -5px;
+  float: left; }
 
 .main-bg {
   -webkit-transition: all 0.5s ease;

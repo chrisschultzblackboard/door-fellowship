@@ -4,7 +4,6 @@
 get_header(); ?>
 <div class="body-bg">
   <div class="head-container">
-    <div class="head filter"></div>
     <div class="head-image">
       <div id="down-arrow"><i class="fa fa-arrow-down"></i></div>
       <div class="container">
@@ -22,8 +21,8 @@ get_header(); ?>
           </div>
         </div>
       </div>
+      <div class="head filter"></div>
     </div>
-    <div class="head-filter"></div>
   </div>
   <div class="statement-container">
     <div class="container">
